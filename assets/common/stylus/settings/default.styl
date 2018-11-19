@@ -62,15 +62,15 @@ img
     box-sizing border-box
     width 100%
     height 100%
-    border $bIBorder
-    border-radius $bIBorderR
-    background-color $bIBgColor
+    border $broken-image-border
+    border-radius $broken-image-border-radius
+    background-color $broken-image-background-color
   &:after
     position absolute
     top 50%
     left 0
     width 100%
-    color $bIColor
+    color $broken-image-color
     content "We're sorry, the image `" attr(alt) '` is broken \2639'
     text-align center
     font-size 16px
@@ -78,7 +78,7 @@ img
 
 a[href]
   &:not([class])
-    color $defaultLinkColor
+    color $default-link-color
     text-decoration underline
 
   &:empty:before

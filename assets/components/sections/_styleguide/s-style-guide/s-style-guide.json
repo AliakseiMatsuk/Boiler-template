@@ -113,15 +113,7 @@
       },
       {
         "tag": "H3",
-        "title": "Use Myriad Pro for all typography"
-      }
-    ]
-  },
-  "icons": {
-    "icons": [
-      {
-        "name": "login",
-        "title": "Login"
+        "title": "Use Gibson for default and Montserrat for secondary"
       }
     ]
   }
