@@ -1,9 +1,8 @@
-@font-face
-  font-family 'MyriadPro'
-  src url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype')
-
 defaultFontFamily()
   font-family $default-font-family, Arial, Helvetica, sans-serif
+
+secondaryFontFamily()
+  font-family $secondary-font-family, Arial, Helvetica, sans-serif
 
 setFontColor()
   &._warning
@@ -14,7 +13,8 @@ setFontColor()
 /**
  * Font family
  */
-$default-font-family = 'MyriadPro'
+$default-font-family = 'GibsonRegular'
+$secondary-font-family = 'MontserratRegular'
 
 /**
  * Wrapper size
