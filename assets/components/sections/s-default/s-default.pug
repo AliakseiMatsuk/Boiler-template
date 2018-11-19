@@ -1,0 +1,16 @@
+mixin s-default(o = {})
+
+    +b.s-default
+        +e.top
+            if o.title
+                +e.H4.title #{o.title}
+            if o.link
+                +e.top-link
+
+        +e.content
+
+            case content
+                when "pr-products"
+                    +pr-products()
+
+                default
