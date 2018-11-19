@@ -14,7 +14,7 @@ module.exports = () => {
     //   });
     $.gulp.watch($.config.watch.htmlData, $.gulp.series('pug:data', 'pug'));
     $.gulp.watch($.config.watch.css, $.gulp.series('stylus', 'lint:stylus'));
-    $.gulp.watch($.config.watch.js, $.gulp.series('scripts'));
+    $.gulp.watch($.config.watch.js, $.gulp.series('scripts', 'lint:scripts'));
     $.gulp.watch($.config.watch.fonts, $.gulp.series('copy:fonts'));
     $.gulp.watch($.config.watch.img, $.gulp.series('copy:image'));
     $.gulp.watch($.config.watch.jsLibs, $.gulp.series('copy:jsLibs'));

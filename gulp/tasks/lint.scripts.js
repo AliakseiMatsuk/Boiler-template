@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = () => {
-  $.gulp.task('js:lint', () => {
-    return $.gulp.src($.config.watch.js)
+  $.gulp.task('lint:scripts', () => {
+    return $.gulp.src($.config.assets.js)
       .pipe($.gp.eslint())
       .pipe($.gp.eslint.format());
-  })
+  });
 };

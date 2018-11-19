@@ -9,7 +9,7 @@ module.exports = () => {
           .pipe($.gp.data(() => JSON.parse($.fs.readFileSync(`${$.config.src}/data/data.json`))))
           .pipe($.gp.data(() => process.env))
           .pipe($.gp.if($.isEmitted, $.emitty.filter($.emittyChangedFile)))
-          .pipe($.gp.pug({pretty: true}))
+          .pipe($.gp.pug({ pretty: true }))
           .pipe($.gulp.dest($.config.public.html))
           .on('end', resolve)
           .on('error', $.gp.notify.onError((error) => {
@@ -17,9 +17,9 @@ module.exports = () => {
             return {
               title: 'Pug',
               message: error.message
-            }
-          }))
+            };
+          }));
       });
-    })
+    });
   });
 };

@@ -52,8 +52,8 @@ $.gulp.task('build', $.gulp.series(
     'copy:jsLibs'
   ),
   $.gulp.parallel(
-    'lint:stylus'
-    // 'lint:scripts' //Temp disabled
+    'lint:stylus',
+    'lint:scripts'
   )
 ));
 

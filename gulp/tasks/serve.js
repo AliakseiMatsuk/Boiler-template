@@ -13,6 +13,6 @@ module.exports = () => {
       port: $.config.port,
       https: $.config.https
     });
-    $.config.reload && $.browserSync.watch([$.config.dist + '/**/*.*', '!**/*.+(css|map)']).on("change", $.browserSync.reload);
+    $.config.reload && $.browserSync.watch([$.config.dist + '/**/*.*', '!**/*.+(css|map)']).on('change', $.browserSync.reload);
   });
 };

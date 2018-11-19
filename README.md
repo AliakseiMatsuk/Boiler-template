@@ -20,6 +20,7 @@
 │   │   ├── pug/
 │   │   │   ├── bemto/
 │   │   │   ├── mixins/
+│   │   │   ├── tools/
 │   │   │   ├── bemto.pug
 │   │   │   ├── favicon.pug
 │   │   │   ├── functions.pug

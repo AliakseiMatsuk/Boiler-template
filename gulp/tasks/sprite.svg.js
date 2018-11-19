@@ -87,8 +87,8 @@ module.exports = () => {
       }))
       .pipe($.gp.if(/[.]svg$/, $.gulp.dest($.config.public.spriteImg)))
       .pipe($.gp.if(/[.]styl/, $.gulp.dest($.config.public.spriteCss)))
-      .pipe($.gp.if(/[.]html$/, $.gulp.dest($.config.public.html)))
-  })
+      .pipe($.gp.if(/[.]html$/, $.gulp.dest($.config.public.html)));
+  });
 };
 
 

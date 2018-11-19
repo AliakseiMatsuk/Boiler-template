@@ -92,16 +92,8 @@
   "icons": {
     "icons": [
       {
-        "name": "alert",
-        "title": "Alert"
-      },
-      {
         "name": "login",
         "title": "Login"
-      },
-      {
-        "name": "play",
-        "title": "Play"
       }
     ]
   }

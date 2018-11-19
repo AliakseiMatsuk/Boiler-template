@@ -1,4 +1,4 @@
-mixin picture(o)
+mixin picture(o = {})
   //- OPTIONS
 
     Full version
@@ -90,7 +90,6 @@ mixin picture(o)
         }
       })(class='Class name')
 
-  - var o = o || {}
   - var c = (i) => {return i > 0 ? ', ' : ''}
 
   mixin image(io)

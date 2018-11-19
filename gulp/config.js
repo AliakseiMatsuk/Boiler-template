@@ -19,7 +19,7 @@ module.exports = {
         js: [`${root}/${assets}/js/main.js`],
         jsLibs: `${root}/${assets}/js/vendor/**/*.js`,
         css: `${root}/${assets}/common/stylus/*.styl`,
-        cssLint: [`${root}/${assets}/**/*.styl`, `!${root}/${assets}/**/vendor/**/*.styl`, `!${root}/${assets}/**/etc/**/*.styl`],
+        cssLint: [`${root}/${assets}/**/*.styl`, `!${root}/${assets}/**/etc/**/*.styl`, `!${root}/${assets}/**/settings/**/*.styl`, `!${root}/${assets}/**/print.styl`],
         img: [`${root}/${assets}/${img}/**/*.+(png|gif|jpg|jpeg|PNG|JPG|JPEG|SVG|svg|webp)`, `!${root}/${assets}/${img}/**/sprite/**/*`],
         fonts: `${root}/${assets}/fonts/**/*.*`,
         spriteImg: `${root}/${assets}/${img}/sprite/*.+(png|gif|jpg|jpeg|PNG|JPG|JPEG)`,

@@ -1,18 +1,15 @@
 .b-link
   display inline-block
-
   &._dark
     .b-link
       &__link
         border-color $border-color-base
         color $text-color-base
-
     &._disabled
       .b-link
         &__link
           border-color rgba($bg-color-base, .5)
           color rgba($text-color-base, .5)
-
   &._disabled
     .b-link
       &__link
@@ -20,7 +17,6 @@
         color rgba($text-color-light, .5)
         cursor not-allowed
         pointer-events none
-
   &:not(._disabled)
     .desktop &
       &:hover,
@@ -30,7 +26,6 @@
             trb(.3s)
 
             border-color $border-color-primary
-
   &__link
     display inline-flex
     align-items center

@@ -57,28 +57,28 @@ hvb()
   display block
   margin auto
 
-tr($all_ = .2s)
-  transition all $all_ ease-out
+tr($all = .2s)
+  transition all $all ease-out
 
-trc($color_ = .2s)
-  transition color $color_ ease-out
+trc($color = .2s)
+  transition color $color ease-out
 
-tro($opacity_ = .2s)
-  transition opacity $opacity_ ease-out
-
-// ----------
-trf($fill_ = .2s)
-  transition fill $fill_ ease-out
-
-trw($width_ = .2s)
-  transition width $width_ ease-out
+tro($opacity = .2s)
+  transition opacity $opacity ease-out
 
 // ----------
-trt($transform_ = .2s)
-  transition transform $transform_ ease-out
+trf($fill = .2s)
+  transition fill $fill ease-out
 
-trto($transform_ = .2s, $opacity_ = .2s)
-  transition transform $transform_ ease-out, opacity $opacity_ ease-out
+trw($width = .2s)
+  transition width $width ease-out
+
+// ----------
+trt($transform = .2s)
+  transition transform $transform ease-out
+
+trto($transform = .2s, $opacity = .2s)
+  transition transform $transform ease-out, opacity $opacity ease-out
 
 // ----------
 trb($bc = .2s)
@@ -151,10 +151,10 @@ vam-ps()
     content ''
     vertical-align middle
 
-o(bgc = $white, opacity_ = .7)
-  background rgba(bgc, opacity_)
+o($bgc = $white, $opacity = .7)
+  background rgba($bgc, $opacity)
 
-pso(bgc = $white, opacity_ = .7)
+pso($bgc = $white, $opacity = .7)
   &:after
     position absolute
     top 0
@@ -162,30 +162,30 @@ pso(bgc = $white, opacity_ = .7)
     display block
     width 100%
     height 100%
-    background rgba(bgc, opacity_)
+    background rgba($bgc, $opacity_)
     content ''
 
-dts(left_, left-padding_, right_, right-padding_)
+dts($left, $left-padding, $right, $right-padding)
   &__table
     dt()
 
   &__left
     dtct()
 
-    if (left_ != 0)
-      width left_
+    if ($left != 0)
+      width $left
 
-    if (left-padding_ != 0)
-      padding left-padding_
+    if ($left-padding != 0)
+      padding $left-padding
 
   &__right
     dtct()
 
-    if (right_ != 0)
-      width right_
+    if ($right != 0)
+      width right
 
-    if (right-padding_ != 0)
-      padding right-padding_
+    if ($right-padding != 0)
+      padding $right-padding
 
 select-reset()
   appearance none
@@ -196,7 +196,7 @@ select-reset()
     display none
 
 divide($width)
-  (((((((((((((((($width / 2))))))))))))))))
+  ($width / 2)
 
 arrow($direction, $width, $height, $color)
   width $width
@@ -259,7 +259,7 @@ triangle($width, $height, $bg, $direction)
     border-width $width 0 0 $height
     border-color transparent transparent transparent $bg
 
-tooltip($dir = 't', $color = $black, $bg = #84a02b, $br = 5px, $tr = .6s, $offset = 10px, $ptb = 10px, $plr = 10px, $arrW = 15px, $arrH = 8px)
+tooltip($dir = 't', $color = $black, $bg = #84a02b, $br = 5px, $tr = .6s, $offset = 10px, $ptb = 10px, $plr = 10px, $arrow-width = 15px, $arrow-height = 8px)
   position relative
   cursor pointer
 
@@ -294,35 +294,35 @@ tooltip($dir = 't', $color = $black, $bg = #84a02b, $br = 5px, $tr = .6s, $offse
     // white-space: nowrap;
 
   &:after
-    $arrDir = $dir
-    $arrWN = $arrW
-    $arrHN = $arrH
+    $arrow-dir = $dir
+    $arrow-width-normal = $arrow-width
+    $arrow-height-normal = $arrow-height
 
     content ''
 
     if ($dir == 'r' || ($dir == 'l'))
-      $arrHN = $arrW
-      $arrWN = $arrH
+      $arrow-height-normal = $arrow-width
+      $arrow-width-normal = $arrow-height
 
     if ($dir == 't')
-      $arrDir = b
+      $arrow-dir = b
 
-      bottom 'calc(100% + %s - %s + 1px)' % ($offset $arrHN)
+      bottom 'calc(100% + %s - %s + 1px)' % ($offset $arrow-height-normal)
     else if ($dir == 'r')
-      $arrDir = l
+      $arrow-dir = l
     else if ($dir == 'b')
-      $arrDir = t
+      $arrow-dir = t
 
-      top 'calc(100% + %s - %s + 1px)' % ($offset $arrHN)
+      top 'calc(100% + %s - %s + 1px)' % ($offset $arrow-height-normal)
     else if ($dir == 'l')
-      $arrDir = r
+      $arrow-dir = r
 
-    triangle($arrWN, $arrHN, $bg, $arrDir)
+    triangle($arrow-width-normal, $arrow-height-normal, $bg, $arrow-dir)
 
   &:hover
-    $arrDir = $dir
-    $arrWN = $arrW
-    $arrHN = $arrH
+    $arrow-dir = $dir
+    $arrow-width-normal = $arrow-width
+    $arrow-height-normal = $arrow-height
 
     &:before,
     &:after
@@ -341,7 +341,7 @@ tooltip($dir = 't', $color = $black, $bg = #84a02b, $br = 5px, $tr = .6s, $offse
         left 'calc(100% + %s)' % $offset
 
       &:after
-        left 'calc(100% + %s - %s + 1px)' % ($offset $arrHN)
+        left 'calc(100% + %s - %s + 1px)' % ($offset $arrow-height-normal)
     else if ($dir == 'l')
       &:before,
       &:after
@@ -351,16 +351,16 @@ tooltip($dir = 't', $color = $black, $bg = #84a02b, $br = 5px, $tr = .6s, $offse
         right 'calc(100% + %s)' % $offset
 
       &:after
-        right 'calc(100% + %s - %s + 1px)' % ($offset $arrHN)
+        right 'calc(100% + %s - %s + 1px)' % ($offset $arrow-height-normal)
 
 customScroll()
-  scrollbar-3dlight-color transparent // @stylint ignore
-  scrollbar-arrow-color $white // @stylint ignore
-  scrollbar-base-color transparent // @stylint ignore
+  scrollbar-3dlight-color transparent
+  scrollbar-arrow-color $white
+  scrollbar-base-color transparent
   scrollbar-darkshadow-color rgba($black, .01)
-  scrollbar-face-color $white // @stylint ignore
+  scrollbar-face-color $white
   scrollbar-highlight-color rgba($black, .01)
-  scrollbar-shadow-color $white // @stylint ignore
+  scrollbar-shadow-color $white
   scrollbar-track-color rgba($black, .01)
 
   &::-webkit-scrollbar

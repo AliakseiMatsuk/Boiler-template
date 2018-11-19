@@ -24,7 +24,7 @@ module.exports = () => {
       let cName = process.argv[4];
       for (let key in prefixes) {
         if (key === cType) {
-          cPrefix = prefixes[key]
+          cPrefix = prefixes[key];
         }
       }
       let cFullName = cPrefix + '-' + cName;
@@ -47,7 +47,7 @@ module.exports = () => {
             break;
         }
         !$.fs.existsSync(fName + '.' + fExpansion) && $.fs.writeFileSync(fName + '.' + fExpansion, fContent);
-        console.log('File: ' + cFullName + '.' + fExpansion + ' created')
+        console.log('File: ' + cFullName + '.' + fExpansion + ' created');
       });
       resolve();
     });
