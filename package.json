@@ -1,12 +1,12 @@
 {
-  "name": "Qaprosoft",
+  "name": "Boiler template",
   "version": "0.0.1",
-  "description": "Qaprosoft",
+  "description": "Boiler template",
   "keywords": [
     "project"
   ],
   "author": {
-    "name": "Qaprosoft team"
+    "name": "Matsuk Aliaksei"
   },
   "engines": {
     "node": "8.9.4",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qaprosoft/qaprosoft-website"
+    "url": "https://github.com/AliakseiMatsuk/Boiler-template"
   },
   "scripts": {
     "gulp": "gulp",
