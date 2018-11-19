@@ -1,0 +1,23 @@
+include bemto
+include mixins
+include functions
+include scripts
+
+block variables
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    base(href="/")
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    title #{pageInfo.title}
+
+    meta(name='description', content=`${pageInfo.description}`)
+    meta(name='format-detection', content='telephone=no')
+
+    link(href='css/common.css', rel='stylesheet' )
+
+  block content

@@ -1,0 +1,34 @@
+mixin b-style-forms(o = {})
+
+    +b.b-style-forms
+        +e.FORM.form
+            +e.UL.list
+                +e.list-item
+                    +f-default-input({
+                        labelText: 'Default state',
+                        inputType: 'password',
+                        inputPlaceholder: 'Write password here'
+                    })
+                +e.list-item
+                    +f-default-input({
+                        labelText: 'Wrong or lacking entry',
+                        inputType: 'password',
+                        inputPlaceholder: 'Write password here',
+                        labelClassName: '_error',
+                        inputErrorText: 'Warning message'
+                    })
+                +e.list-item
+                    +f-default-input({
+                        labelText: 'Active state',
+                        inputType: 'password',
+                        inputPlaceholder: 'Write password here',
+                        inputText: '*******',
+                        labelClassName: '_focus'
+                    })
+                +e.list-item
+                    +f-default-input({
+                        labelText: 'Successfully completed form',
+                        inputType: 'password',
+                        inputPlaceholder: 'Write password here',
+                        inputText: '*******'
+                    })

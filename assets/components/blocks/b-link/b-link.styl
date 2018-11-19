@@ -1,0 +1,43 @@
+.b-link
+  display inline-block
+
+  &._dark
+    .b-link
+      &__link
+        border-color $border-color-base
+        color $text-color-base
+
+    &._disabled
+      .b-link
+        &__link
+          border-color rgba($bg-color-base, .5)
+          color rgba($text-color-base, .5)
+
+  &._disabled
+    .b-link
+      &__link
+        border-color rgba($border-color-light, .5)
+        color rgba($text-color-light, .5)
+        cursor not-allowed
+        pointer-events none
+
+  &:not(._disabled)
+    .desktop &
+      &:hover,
+      &._hover
+        .b-link
+          &__link
+            trb(.3s)
+
+            border-color $border-color-primary
+
+  &__link
+    display inline-flex
+    align-items center
+    border-width 0
+    border-style solid
+    border-color rgba($border-color-light, .5)
+    border-bottom-width 1px
+    color $text-color-lighter
+    text-decoration none
+    font-size $font-size-medium-desktop

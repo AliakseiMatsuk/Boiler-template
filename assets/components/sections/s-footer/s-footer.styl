@@ -1,0 +1,67 @@
+.s-footer
+  padding 95px 0 98px
+  background-color $bg-color-lightest
+
+  &__container
+    display flex
+    justify-content space-between
+    margin 0 auto
+    max-width 1280px
+
+  &__content
+    fw(380px)
+
+  &__title
+    margin-bottom 50px
+
+  &__menu
+    &-item
+      &:not(:last-child)
+        margin-bottom 6px
+
+    &-link
+      border-bottom 1px solid rgba($border-color-base, .5)
+      color $text-color-base
+      font-size $font-size-large-desktop
+
+      .desktop &
+        trb()
+
+        &:hover
+          border-color transparent
+
+  &__logo
+    padding-top 5px
+
+    &-link
+      display block
+
+    .svg
+      width 64px
+      height 64px
+
++media-mobile()
+  .s-footer
+    padding 75px 0 45px
+
+    &__container
+      flex-direction column
+      padding 0 5px
+
+    &__content
+      fw(100%)
+
+    &__title
+      margin-bottom 30px
+
+    &__menu
+      margin-bottom 78px
+
+    &__logo
+      padding-top 0
+
++media-mobile-375()
+  .s-footer
+    &__container
+      flex-direction column
+      padding 0 15px

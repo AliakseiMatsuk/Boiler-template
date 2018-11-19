@@ -1,0 +1,11 @@
+mixin l-style-icons(o = {})
+
+    +b.UL.l-style-icons
+        each icon in o
+            +e.item
+                +e.block
+                    +svg({
+                        name: icon.name,
+                        className: '_primary'
+                    })
+                +e.H5.title !{icon.title}

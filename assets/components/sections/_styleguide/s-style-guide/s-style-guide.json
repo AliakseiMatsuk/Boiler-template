@@ -1,0 +1,112 @@
+{
+  "colors": {
+    "groups": [
+      {
+        "title": "Primary",
+        "colors": [
+          {
+            "name": "AF gul",
+            "code": "#FECB00"
+          },
+          {
+            "name": "AF Background",
+            "code": "#0D262E"
+          }
+        ]
+      },
+      {
+        "title": "Grays",
+        "colors": [
+          {
+            "name": "AF gra",
+            "code": "#444444"
+          },
+          {
+            "name": "AF gra 2",
+            "code": "#C0C0C0"
+          },
+          {
+            "name": "AF gra 3",
+            "code": "#E9E9E9"
+          }
+        ]
+      },
+      {
+        "title": "Warnings",
+        "colors": [
+          {
+            "name": "AF Alert",
+            "code": "#FF2E00"
+          }
+        ]
+      }
+    ]
+  },
+  "typo": {
+    "head": [
+      "Tag",
+      "Weight",
+      "Size",
+      "Line height",
+      "Colour"
+    ],
+    "body": [
+      {
+        "tag": "H1",
+        "title": "H1 - Display Large",
+        "weight": "Regular",
+        "size": "42",
+        "lineHeight": "46",
+        "color": "#E9E9E9"
+      },
+      {
+        "tag": "H2",
+        "title": "H2 - Display Small",
+        "weight": "Regular",
+        "size": "28",
+        "lineHeight": "32",
+        "color": "#E9E9E9"
+      },
+      {
+        "tag": "H3",
+        "title": "H3 - Body",
+        "weight": "Regular",
+        "size": "18",
+        "lineHeight": "23",
+        "color": "#E9E9E9"
+      },
+      {
+        "tag": "H4",
+        "title": "H4 - Descriptions",
+        "weight": "Regular",
+        "size": "16",
+        "lineHeight": "18",
+        "color": "#E9E9E9"
+      },
+      {
+        "tag": "H3",
+        "title": "Use Myriad Pro for all typography"
+      }
+    ]
+  },
+  "icons": {
+    "icons": [
+      {
+        "name": "alert",
+        "title": "Alert"
+      },
+      {
+        "name": "login",
+        "title": "Login"
+      },
+      {
+        "name": "play",
+        "title": "Play"
+      }
+    ]
+  }
+}
+
+
+
+

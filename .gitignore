@@ -1,0 +1,38 @@
+# Numerous always-ignore extensions
+psd/
+png/
+jpg/
+jpeg/
+pixelPerfect/
+
+doc/
+prod/
+vendors/
+temp/
+back/
+
+build/
+public/
+
+._*
+
+.env.json
+assets/data/
+bash.exe.stackdump
+
+# Node.JS
+bower_components/
+node_modules/
+npm-debug.log
+
+# OS or Editor folders
+.idea/
+.svn/
+.git/
+.DS_Store
+.sublime-grunt.cache
+.sublime-project
+.sublime-workspace
+
+
+

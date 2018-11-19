@@ -1,0 +1,6 @@
+mixin b-color(o = {})
+
+    +b.b-color
+        +e.block(style=`background-color: ${o.code}`, class=`${o.code === '#0D262E' ? '_bordered' : ''}`)
+        +e.name #{o.name}
+        +e.code #{o.code}

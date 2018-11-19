@@ -1,0 +1,10 @@
+extends ../common/pug/layout
+
+block variables
+    - var pageInfo = {title: 'Style Guide', description: 'Style Guide'}
+
+block content
+    body
+        .wrapper
+            +s-style-guide()
+        +scripts()

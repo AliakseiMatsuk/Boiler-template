@@ -1,0 +1,154 @@
+.btn
+  defaultFontFamily()
+
+  display inline-flex
+  justify-content center
+  align-items center
+  min-width 170px
+  min-height 6.2rem
+  outline none
+  border-width 1px
+  border-style solid
+  border-color $border-color-light
+  background-color $bg-color-primary
+  color $btn-color-base
+  font-size $font-size-medium-desktop
+
+  ._ie &
+    height 6.2rem
+
+  &._lg
+    min-height 7.3rem
+    font-size $font-size-large-desktop
+
+    ._ie &
+      height 7.3rem
+
+  &._xl
+    min-height 7.8rem
+    font-size $font-size-large-desktop
+
+    ._ie &
+      height 7.8rem
+
+  .desktop &
+    tr(.3s)
+
+    &:not([disabled])
+      &._hover,
+      &:hover
+        border-color $border-color-primary
+        background-color $bg-color-dark
+        color $btn-color-lighter
+
+        .btn__arrow
+          &:before
+            trbg()
+
+            background $bg-color-lighter
+
+          &:after
+            trb()
+
+            border-color $border-color-lighter
+
+      &._warning
+        &._hover,
+        &:hover
+          border-color $border-color-warning
+
+  &._disabled,
+  &[disabled]
+    border-color $border-color-light
+    background-color $bg-color-base
+    color rgba($btn-color-lighter, .5)
+
+    .btn__arrow
+      &:before
+        background #808080 // @stylint ignore
+
+      &:after
+        border-color #808080 // @stylint ignore
+
+  &._wide
+    width 100%
+
+  &._outline
+    background-color $bg-color-dark
+    color $btn-color-lighter
+
+    &[disabled]
+      border-color rgba($border-color-light, .5)
+      color rgba($btn-color-lighter, .5)
+
+  &._warning
+    background-color $bg-color-warning
+    color $text-color-lighter
+
+  &._rounded
+    min-width 205px
+    min-height 5.2rem
+    border-radius 100px
+
+    ._ie &
+      height 5.2rem
+
+  &._arrow
+    display flex
+    justify-content space-between
+    align-items center
+    padding 0 30px
+
+  &__icon
+    margin-right 14px
+
+  &__arrow
+    position relative
+    width 16px
+    height 8px
+
+    ._arrow-animate &
+      animation bounce 2s infinite
+
+    &:before,
+    &:after
+      ps()
+
+    &:before
+      top 50%
+      right 0
+      width 16px
+      height 1px
+      background $bg-color-base
+      transform translateY(-50%)
+
+    &:after
+      right -.5px
+      z-index 1
+      width 8px
+      height 8px
+      border-top 1px solid $border-color-base
+      border-right 1px solid $border-color-base
+      transform rotate(45deg)
+
++media-mobile()
+  .btn
+    min-width auto
+    min-height 6.4rem
+
+    ._ie &
+      height 6.4rem
+
+@keyframes bounce
+  0%,
+  20%,
+  50%,
+  80%,
+  100%
+    transform translateX(0)
+
+  40%
+    transform translateX(-15px)
+
+  60%
+    transform translateX(-8px)

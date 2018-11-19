@@ -1,0 +1,4 @@
+mixin icon(o)
+  - var o = o || {}
+
+  i.icon(class=`icon-${o.name + ' ' + (o.mod || '')}`)&attributes(attributes)

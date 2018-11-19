@@ -1,0 +1,77 @@
+.f-default
+  &__row
+    & + &
+      margin-top 16px
+  &__label
+    position relative
+    display block
+
+    &._hidden
+      display none
+    &._error
+      .f-default
+        &__field,
+        &__field:focus,
+        &__field:hover,
+        &__textarea,
+        &__textarea:focus,
+        &__textarea:hover
+          border-color $text-color-warning
+        &__error
+          display block
+      .multiselect__tags
+        border-color $text-color-warning
+    &._focus
+      .f-default
+        &__field,
+        &__field:focus,
+        &__field:hover,
+        &__textarea,
+        &__textarea:focus,
+        &__textarea:hover
+          .desktop &
+            border-color $border-color-primary
+    &-row
+      display flex
+      justify-content space-between
+    &-text
+      margin-bottom 7px
+      font-size $font-size-large-desktop
+  &__error
+    display none
+    margin -5px 0 15px
+    color $text-color-warning
+    font-size $font-size-large-desktop
+  &__field
+    padding 0 33px 0 28px
+    width 100%
+    height 73px
+    border-width 1px
+    border-style solid
+    border-color $border-color-light
+    color $text-color-lighter
+    font-size $font-size-large-desktop
+    caret-color $text-color-lighter // @stylint ignore
+
+    trb()
+
+    &:focus
+      border-color $border-color-primary
+    &::placeholder
+      color rgba($text-color-light, .75)
+      letter-spacing -.03em
+      font-size $font-size-large-desktop
+  &__terms
+    margin 77px auto
+    max-width 250px
+  &__info
+    margin-top 36px
+
+    &-text
+      margin-bottom 3px
+    &-link
+      text-align center
++media-mobile()
+  .f-default
+    &__terms
+      margin 75px auto 40px

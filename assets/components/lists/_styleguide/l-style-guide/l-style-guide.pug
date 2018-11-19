@@ -1,0 +1,27 @@
+mixin l-style-guide(o = {})
+
+    +b.UL.l-style-guide
+        +e.item
+            +e.H2.title Colour palette
+            +e.colors
+                +b-style-colors(o.colors)
+        +e.item
+            +e.H2.title Typography
+            +e.typo
+                +b-style-typo(o.typo)
+        +e.item
+            +e.H2.title Icons
+            +e.icons
+                +b-style-icons(o.icons)
+        +e.item
+            +e.H2.title Buttons
+            +e.buttons
+                +b-style-buttons()
+        +e.item
+            +e.H2.title Forms
+            +e.forms
+                +b-style-forms()
+        +e.item
+            +e.H2.title Checkbox and radio buttons
+            +e.checkbox
+                +b-style-checkbox()

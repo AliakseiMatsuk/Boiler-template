@@ -1,0 +1,132 @@
+@import 'variables'
+
+html,
+body
+  height 100%
+  background-color $bg-color-dark
+  color $text-color-lighter
+  font-weight $font-weight-regular-text
+  font-size 62.5%
+  overscroll-behavior-y none // @stylint ignore
+
+  defaultFontFamily()
+
+h1,
+.h1
+  font-size $font-size-black-desktop // 4.2
+  line-height $line-height-default
+
+h2,
+.h2
+  font-size $font-size-big-desktop // 2.8
+  line-height $line-height-small
+
+h3,
+.h3
+  font-size $font-size-large-desktop // 1.8
+  line-height $line-height-regular
+
+h4,
+.h4
+  font-size $font-size-medium-desktop // 1.6
+  line-height $line-height-medium
+
+h5,
+.h5
+  font-size $font-size-small-desktop // 1.5
+  line-height $line-height-medium
+
+p
+  font-size $font-size-medium-desktop // 1.6
+  line-height $line-height-medium
+
+li,
+th,
+td
+  font-size $font-size-medium-desktop // 1.6
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+th,
+td
+  font-weight $font-weight-regular-text
+
+  setFontColor()
+
+  &._centered
+    text-align center
+
+  &._uppercase
+    text-transform uppercase
+
+b
+  font-weight $font-weight-medium-text
+
+img[data-object-fit='contain']
+  object-fit contain
+
+img[data-object-fit='cover']
+  object-fit cover
+
+img
+  position relative
+  display block
+  min-height 50px
+  max-width 100%
+
+  &:before
+    ps()
+
+    box-sizing border-box
+    width 100%
+    height 100%
+    border $bIBorder
+    border-radius $bIBorderR
+    background-color $bIBgColor
+
+  &:after
+    position absolute
+    top 50%
+    left 0
+    width 100%
+    color $bIColor
+    content "We're sorry, the image `" attr(alt) '` is broken \2639'
+    text-align center
+    font-size 16px
+    transform translateY(-50%)
+
+a[href]
+  &:not([class])
+    color $defaultLinkColor
+    text-decoration underline
+
+  &:empty:before
+    content attr(href)
+
+::selection
+  background $text-color-primary // @stylint ignore
+  text-shadow none
+
+textarea
+  resize vertical
+
+.wrapper
+  position relative
+  display flex
+  flex-direction column
+  align-items stretch
+  overflow hidden
+  min-width $wrapper-min-width
+  min-height 100%
+
+.container
+  margin 0 auto
+  padding 0 15px
+  min-width $wrapper-min-width
+  max-width $wrapper-max-width

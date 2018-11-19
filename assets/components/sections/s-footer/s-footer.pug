@@ -1,0 +1,15 @@
+mixin s-footer(o = {})
+
+  +b.FOOTER.s-footer
+    .container
+      +e.container
+        +e.content
+          +e.H2.title._base AF-kollektivet er en konkurranse i regi av AF&nbsp;Gruppen
+          +e.UL.menu
+            +e.menu-item
+              +e.menu-link(href="mailto:kommunikasjon@afgruppen.no") Kontakt oss
+        +e.logo
+          +e.logo-link(href="https://afgruppen.no/", target="_blank")
+            +svg({
+                name: 'logo-rect'
+            })

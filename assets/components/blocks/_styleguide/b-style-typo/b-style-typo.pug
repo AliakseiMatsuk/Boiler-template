@@ -1,0 +1,34 @@
+mixin b-style-typo(o = {})
+
+    +b.b-style-typo
+        +e.table
+            +e.table-head
+                +e.table-row
+                    each title in o.head
+                        +e.table-col
+                            +e.H2 #{title}
+            +e.table-body
+                each row in o.body
+                    +e.table-row
+                        +e.table-col
+                            case row.tag
+                                when "H1"
+                                    +e.H1 #{row.title}
+                                when "H2"
+                                    +e.H2 #{row.title}
+                                when "H3"
+                                    +e.H3 #{row.title}
+                                when "H4"
+                                    +e.H4 #{row.title}
+                        if row.weight
+                            +e.table-col
+                                +e.H3 #{row.weight}
+                        if row.size
+                            +e.table-col
+                                +e.H3  #{row.size} px
+                        if row.lineHeight
+                            +e.table-col
+                                +e.H3  #{row.lineHeight} px
+                        if row.color
+                            +e.table-col
+                                +e.H3 #{row.color}

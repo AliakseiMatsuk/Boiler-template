@@ -1,0 +1,8 @@
+mixin l-color-groups(o)
+
+    +b.UL.l-color-groups
+        each group in o
+            +e.item
+                +e.H3.title #{group.title}
+                +e.list
+                    +l-color-list(group.colors)

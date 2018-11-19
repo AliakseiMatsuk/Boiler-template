@@ -1,0 +1,148 @@
+@font-face
+  font-family 'MyriadPro'
+  src url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype')
+
+defaultFontFamily()
+  font-family $default-font, Arial, Helvetica, sans-serif
+
+setFontColor()
+  &._warning
+    color $text-color-warning
+
+  &._base
+    color $text-color-base
+
+/**
+ * Basic elements heights
+ */
+$s-header-height = 58px
+$s-header-height_mobile = 65px
+$s-games__top-height = 65px
+$s-games__top-height_mobile = 60px
+$s-games__content-actions_mobile = 64px
+$s-position-height = 74px
+$s-footer-height = 388px
+/**
+ * Font family
+ */
+$default-font = 'MyriadPro'
+/**
+ * Wrapper size
+ */
+$wrapper-max-width = 144rem + 4rem
+$wrapper-min-width = 32rem
+/**
+ * Colors
+ */
+$gul = #FECB00
+$black = #0D262E
+$white = #FFFFFF
+// Grays
+$darkGray = #444444
+$gray = #C0C0C0
+$lightGray = #E9E9E9
+// Warning
+$alert = #FF2E00
+/**
+ * Colors Variables
+ */
+$defaultLinkColor = $gul
+$primary = $gul
+$dark = $black
+$base = $darkGray
+$light = $gray
+$lighter = $lightGray
+$warning = $alert
+// text colors
+$text-color-base = $base
+$text-color-light = $light
+$text-color-lighter = $lighter
+$text-color-warning = $warning
+$text-color-primary = $primary
+$text-color-lightest = $white
+// background colors
+$bg-color-primary = $primary
+$bg-color-dark = $dark
+$bg-color-base = $base
+$bg-color-light = $light
+$bg-color-lighter = $lighter
+$bg-color-warning = $warning
+$bg-color-lightest = $white
+// border colors
+$border-color-primary = $primary
+$border-color-dark = $dark
+$border-color-base = $base
+$border-color-light = $light
+$border-color-lighter = $lighter
+$border-color-warning = $warning
+// buttons colors
+$btn-color-base = $base
+$btn-color-lighter = $lighter
+/**
+ * Broken image style
+ */
+$bIColor = #646464
+$bIBgColor = #e6e6e6
+$bIBorder = 2px dotted #c8c8c8
+$bIBorderR = 5px
+/**
+ * Screen sizes
+ */
+$screen-wide-max = 1440px
+$screen-tablet-max = 1023px
+$screen-tablet-mobile-max = 800px
+$screen-mobile-max = 768px
+$screen-mobile-600-max = 600px
+$screen-mobile-480-max = 480px
+$screen-mobile-375-max = 374px
+/**
+ * Fonts
+ */
+$font-size-black-desktop = 4.2rem
+$font-size-big-desktop = 2.8rem
+$font-size-large-desktop = 1.8rem
+$font-size-medium-desktop = 1.6rem
+$font-size-small-desktop = 1.4rem
+/**
+ * Line Height
+ */
+$line-height-default = (46 / 42) // 1.09
+$line-height-small = (32 / 28) // 1.14
+$line-height-regular = (23 / 18) // 1.28
+$line-height-medium = (18 / 16) // 1.125
+/**
+ * Font weights
+ */
+$font-weight-regular = 400
+// text
+$font-weight-regular-text = $font-weight-regular
+// radiuses
+$border-radius-default = 20px
+
+media-wide()
+  @media screen and (max-width: $screen-wide-max)
+    {block} // @stylint ignore
+
+media-tablet()
+  @media screen and (max-width: $screen-tablet-max)
+    {block} // @stylint ignore
+
+media-tablet-mobile()
+  @media screen and (max-width: $screen-tablet-mobile-max)
+    {block} // @stylint ignore
+
+media-mobile()
+  @media screen and (max-width: $screen-mobile-max)
+    {block} // @stylint ignore
+
+media-mobile-600()
+  @media screen and (max-width: $screen-mobile-600-max)
+    {block} // @stylint ignore
+
+media-mobile-480()
+  @media screen and (max-width: $screen-mobile-480-max)
+    {block} // @stylint ignore
+
+media-mobile-375()
+  @media screen and (max-width: $screen-mobile-375-max)
+    {block} // @stylint ignore

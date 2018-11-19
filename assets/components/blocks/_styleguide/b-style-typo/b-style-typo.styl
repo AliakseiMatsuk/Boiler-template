@@ -1,0 +1,30 @@
+.b-style-typo
+  &__table
+    &-head
+      border-bottom 1px solid #808080 // @stylint ignore
+
+      .b-style-typo__table-row
+        padding-bottom 33px
+
+    &-row
+      display flex
+      align-items center
+
+      &:not(:last-child)
+        border-bottom 1px solid #808080 // @stylint ignore
+
+    &-col
+      &:first-child
+        fw(518px)
+
+      &:not(:first-child)
+        fw(calc(((100% - 518px) / 4)))
+
+    &-body
+      .b-style-typo__table-row
+        &:not(:last-child)
+          padding 10px 0 20px
+          min-height 102px
+
+        &:last-child
+          padding-top 20px

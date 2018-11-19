@@ -1,0 +1,11 @@
+extends ../common/pug/layout
+
+block variables
+  - var pageInfo = {title: 'index', description: 'index'}
+
+block content
+  body
+    .wrapper
+      +s-header()
+      +s-footer()
+    +scripts()

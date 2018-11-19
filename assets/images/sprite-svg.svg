@@ -1,0 +1,5 @@
+<svg class="svg-templates" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+<symbol id="alert" viewBox="0 0 53.167 53.167"> <g transform="translate(2 2)"> <path fill="none" stroke="#fff" stroke-width="4.833" stroke-linecap="round" stroke-linejoin="round" d="M14.578.417h20.01L48.75 14.578v20.01L34.588 48.75h-20.01L.417 34.588v-20.01zM24.583 14.917v9.667"/> <circle cx="24.583" cy="34.25" r="2.417" fill="#fff"/> </g> </symbol>
+<symbol id="login" viewBox="0 0 13 16"> <path d="M6.5.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm6 15.5a6 6 0 1 0-12 0"/> </symbol>
+<symbol id="play" viewBox="0 0 12.45 13"> <path d="M11.697 3.5a6 6 0 1 0-5.197 9 5.976 5.976 0 0 0 3.969-1.5M11.95.5v3.2h-3.2"/> </symbol>
+</svg>
