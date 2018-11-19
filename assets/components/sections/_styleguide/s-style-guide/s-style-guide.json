@@ -2,41 +2,69 @@
   "colors": {
     "groups": [
       {
-        "title": "Primary",
+        "title": "Dark",
         "colors": [
           {
-            "name": "AF gul",
-            "code": "#FECB00"
+            "name": "Black",
+            "code": "#000000"
           },
           {
-            "name": "AF Background",
-            "code": "#0D262E"
+            "name": "Cod gray",
+            "code": "#191919"
+          },
+          {
+            "name": "Tundora",
+            "code": "#4a4a4a"
+          },
+          {
+            "name": "Boulder",
+            "code": "#757575"
           }
         ]
       },
       {
-        "title": "Grays",
+        "title": "Blues",
         "colors": [
           {
-            "name": "AF gra",
-            "code": "#444444"
+            "name": "Resolution blue",
+            "code": "#002281"
           },
           {
-            "name": "AF gra 2",
-            "code": "#C0C0C0"
+            "name": "Deep koamaru",
+            "code": "#153281"
           },
           {
-            "name": "AF gra 3",
-            "code": "#E9E9E9"
+            "name": "Ship cove",
+            "code": "#7587b9"
+          },
+          {
+            "name": "Indigo",
+            "code": "#406fc0"
+          },
+          {
+            "name": "Malibu",
+            "code": "#81bcff"
+          },
+          {
+            "name": "Jordy blue",
+            "code": "#89baf2"
           }
         ]
       },
       {
-        "title": "Warnings",
+        "title": "Light",
         "colors": [
           {
-            "name": "AF Alert",
-            "code": "#FF2E00"
+            "name": "Mischka",
+            "code": "#cbd1dc"
+          },
+          {
+            "name": "Athens gray",
+            "code": "#eaecf1"
+          },
+          {
+            "name": "White",
+            "code": "#ffffff"
           }
         ]
       }
