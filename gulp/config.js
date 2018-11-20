@@ -24,7 +24,7 @@ module.exports = {
         fonts: `${root}/${assets}/fonts/**/*.*`,
         spriteImg: `${root}/${assets}/${img}/sprite/*.+(png|gif|jpg|jpeg|PNG|JPG|JPEG)`,
         spriteImgRetina: `${root}/${assets}/${img}/sprite/*@2x.+(png|gif|jpg|jpeg|PNG|JPG|JPEG)`,
-        spriteSvg: `${root}/${assets}/${img}/sprite/*.svg`,
+        spriteSvg: `${root}/${assets}/${img}/sprite/**/*.svg`,
     },
     public: {
         html: `${root}/${dist}`,

@@ -1,0 +1,72 @@
+{
+  "partners": [
+    {
+      "title": "Under Armor",
+      "icon": "under-armor"
+    },
+    {
+      "title": "Starbucks",
+      "icon": "starbucks"
+    },
+    {
+      "title": "Stanford",
+      "icon": "stanford"
+    },
+    {
+      "title": "Fitbod",
+      "icon": "fitbod"
+    },
+    {
+      "title": "LendingClub",
+      "icon": "lendingclub"
+    },
+    {
+      "title": "Zong",
+      "icon": "zong"
+    },
+    {
+      "title": "Burger King",
+      "icon": "burger-king"
+    },
+    {
+      "title": "Smule",
+      "icon": "smule"
+    },
+    {
+      "title": "Qorum",
+      "icon": "qorum"
+    },
+    {
+      "title": "Tripointlab",
+      "icon": "tripointlab"
+    },
+    {
+      "title": "Nerdwallet",
+      "icon": "nerdwallet"
+    },
+    {
+      "title": "Telegraphhill",
+      "icon": "telegraphhill"
+    },
+    {
+      "title": "Athos",
+      "icon": "athos"
+    },
+    {
+      "title": "AT&T",
+      "icon": "att"
+    },
+    {
+      "title": "Modius",
+      "icon": "modius"
+    },
+    {
+      "title": "Rosneft",
+      "icon": "rosneft"
+    }
+  ]
+}
+
+
+
+
