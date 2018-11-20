@@ -9,7 +9,7 @@ mixin s-default(o = {})
             +e.title #{o.title}
           if o.link
             +e.link
-              //+b-arrow-link(o.link)
+              +a-arrow(o.link)
 
-        +e.content
-          +#{o.slot}()
+        +e.inner
+          +#{o.slot}(o.slotSettings || {})

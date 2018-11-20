@@ -2,43 +2,43 @@
   "projects": [
     {
       "description": "5 Quality solutions for APPs’ market dominance",
-      "image": "",
-      "href": ""
+      "image": "1",
+      "href": "#"
     },
     {
       "description": "Shared economy solutions for transport software company",
-      "image": "",
-      "href": ""
+      "image": "2",
+      "href": "#"
     },
     {
       "description": "Learning management system with <br> multiplayer for VR &amp; AR",
-      "image": "",
-      "href": ""
+      "image": "3",
+      "href": "#"
     },
     {
       "description": "AI based chatbot for hotel management system",
-      "image": "",
-      "href": ""
+      "image": "4",
+      "href": "#"
     },
     {
       "description": "Restaurant management system for cocktail bars",
       "image": "",
-      "href": ""
+      "href": "#"
     },
     {
       "description": "Automated QA in accuracy/critical FinTech environment",
       "image": "",
-      "href": ""
+      "href": "#"
     },
     {
       "description": "Complete engineering solutions for the entire QA",
       "image": "",
-      "href": ""
+      "href": "#"
     },
     {
       "description": "Betfair analytic system based on machine learning",
       "image": "",
-      "href": ""
+      "href": "#"
     }
   ]
 }

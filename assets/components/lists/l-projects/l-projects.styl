@@ -1,2 +1,18 @@
 .l-projects
-  /* write your styles here */
+  display flex
+  flex-wrap wrap
+  margin-right -10px
+
+  &__project
+    fw(50%)
+
+    margin-bottom 10px
+    padding-right 10px
++media-mobile()
+  .l-projects
+    margin-right 0
+
+    &__project
+      fw(100%)
+
+      padding-right 0

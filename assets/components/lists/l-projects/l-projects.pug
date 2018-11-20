@@ -1,6 +1,7 @@
 mixin l-projects(o = {})
 
   +b.UL.l-projects(role="list")
-    each project in lProjects.projects
-      +e.project
-        +pr-project(project)
+    each project,index in lProjects.projects
+      if index < o.visibleProjects
+        +e.project
+          +pr-project(project)

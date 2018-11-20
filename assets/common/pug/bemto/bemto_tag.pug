@@ -51,9 +51,6 @@ mixin bemto_tag(tag, tagMetadata)
   - bemto_chain_contexts[bemto_chain_contexts.length] = content_type
 
   if newTag == 'img'
-    //- If there is no title we don't need it to show even if there is some alt
-    if attributes.alt && !attributes.title
-      - attributes.title = ''
     //- If we have title, we must have it in alt if it's not set
     if attributes.title && !attributes.alt
       - attributes.alt = attributes.title

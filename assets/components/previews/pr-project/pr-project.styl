@@ -1,2 +1,67 @@
 .pr-project
-  /* write your styles here */
+  display block
+
+  .desktop &
+    &:hover
+      .pr-project
+        &__inner
+          &:after
+            opacity 1
+        &__description
+          text-decoration underline
+        &__image
+          transform scale(1.1)
+  &__inner
+    position relative
+    overflow hidden
+    padding-top 55%
+    max-height 300px
+
+    &:before,
+    &:after
+      position absolute
+      bottom 0
+      z-index 1
+      display block
+      content ''
+    &:before
+      width 100%
+      height 45%
+      background linear-gradient(180deg, transparent 3%, rgba(0, 0, 0, .15) 38%, rgba(0, 0, 0, .2) 44%, rgba(0, 0, 0, .27) 53%, rgba(0, 0, 0, .55) 99%)
+    &:after
+      top 0
+      right 0
+      bottom 0
+      left 0
+      background rgba($bg-color-base, .35)
+      opacity 0
+
+      tro(.3s)
+  &__image
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    transform-origin center
+    object-position center
+    .desktop &
+      will-change transform
+      trt(.3s)
+  &__description
+    position absolute
+    right 5%
+    bottom 11%
+    left 5%
+    z-index 2
+    max-width 450px
+    color $text-color-light
+    font-weight $font-weight-semibold-text
+    font-size $font-size-big-desktop
+    line-height 1.5
+
++media-tablet()
+  .pr-project
+    &__inner
+      &:after
+        opacity 1

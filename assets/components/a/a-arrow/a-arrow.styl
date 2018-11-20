@@ -1,0 +1,36 @@
+.a-arrow
+  display flex
+  align-items center
+  color $text-color-primary
+  text-decoration none
+  font-size $font-size-small-desktop
+  .desktop &
+    &:hover
+      .a-arrow
+        &__arrow
+          transform translateX(10px)
+  &__text
+    margin-right 10px
+    white-space nowrap
+  &__arrow
+    position relative
+    display flex
+    align-items center
+    transform-origin left center
+    .desktop &
+      trt(.3s)
+      will-change transform
+    &:before
+      display block
+      width 62px
+      height 2px
+      background-color currentColor
+      content ''
+    &:after
+      display block
+      width 8px
+      height 8px
+      border-top 2px solid currentColor
+      border-right 2px solid currentColor
+      content ''
+      transform translateX(-2px) rotate(45deg)
