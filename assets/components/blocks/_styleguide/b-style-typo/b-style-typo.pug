@@ -6,7 +6,7 @@ mixin b-style-typo(o = {})
                 +e.table-row
                     each title in o.head
                         +e.table-col
-                            +e.H2 #{title}
+                            +e.H4 #{title}
             +e.table-body
                 each row in o.body
                     +e.table-row
@@ -22,13 +22,13 @@ mixin b-style-typo(o = {})
                                     +e.H4 #{row.title}
                         if row.weight
                             +e.table-col
-                                +e.H3 #{row.weight}
+                                +e.H4 #{row.weight}
                         if row.size
                             +e.table-col
-                                +e.H3  #{row.size} px
+                                +e.H4  #{row.size} px
                         if row.lineHeight
                             +e.table-col
-                                +e.H3  #{row.lineHeight} px
+                                +e.H4  #{row.lineHeight} px
                         if row.color
                             +e.table-col
-                                +e.H3 #{row.color}
+                                +e.H4 #{row.color}

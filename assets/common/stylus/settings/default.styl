@@ -13,27 +13,27 @@ h1, .h1
   line-height $line-height-default
 
 h2, .h2
-  font-size $font-size-big-desktop // 2.8
+  font-size $font-size-black-desktop // 2.0
   line-height $line-height-small
 
 h3, .h3
-  font-size $font-size-large-desktop // 1.8
-  line-height $line-height-regular
+  font-size $font-size-large-desktop // 4.0
+  line-height $line-height-small
+  font-weight $font-weight-light-text
 
 h4, .h4
-  font-size $font-size-medium-desktop // 1.6
-  line-height $line-height-medium
-
-h5, .h5
-  font-size $font-size-small-desktop // 1.5
-  line-height $line-height-medium
+  font-size $font-size-big-desktop // 2.0
+  line-height $line-height-large
 
 p
-  font-size $font-size-medium-desktop // 1.6
-  line-height $line-height-medium
+  font-size $font-size-medium-desktop // 1.8
+  line-height $line-height-default
+  &._small
+    font-size $font-size-small-desktop // 1.6
+    line-height $line-height-regular
 
 li, th, td
-  font-size $font-size-medium-desktop  // 1.6
+  font-size $font-size-medium-desktop // 1.8
 
 h1, h2, h3, h4, h5, h6, p, li, th, td
   font-weight $font-weight-regular-text
@@ -42,7 +42,8 @@ h1, h2, h3, h4, h5, h6, p, li, th, td
     text-align center
   &._uppercase
     text-transform uppercase
-
+  &._semibold
+    font-weight $font-weight-semibold-text
 b
   font-weight $font-weight-medium-text
 
