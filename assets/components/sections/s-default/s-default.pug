@@ -1,16 +1,13 @@
 mixin s-default(o = {})
 
-    +b.s-default
+  +b.SECTION.s-default
+    .container
+      +e.content
         +e.top
-            if o.title
-                +e.H4.title #{o.title}
-            if o.link
-                +e.top-link
+          if o.title
+            +e.title #{o.title}
+          if o.link
+            +e.link
 
         +e.content
-
-            case content
-                when "pr-products"
-                    +pr-products()
-
-                default
+          +#{o.slot}()

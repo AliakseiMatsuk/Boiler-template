@@ -6,11 +6,10 @@ block variables
 block content
   body
     .wrapper
-      +s-header()
+      //- +s-header()
       +s-default({
-          title: "uygytgtygytg",
-          link: "",
-          content: "pr-products"
+        title: "Our products",
+        slot: "l-products"
       })
-      +s-footer()
+      //- +s-footer()
     +scripts()
