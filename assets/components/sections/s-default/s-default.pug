@@ -3,11 +3,13 @@ mixin s-default(o = {})
   +b.SECTION.s-default
     .container
       +e.content
+
         +e.top
           if o.title
             +e.title #{o.title}
           if o.link
             +e.link
+              //+b-arrow-link(o.link)
 
         +e.content
           +#{o.slot}()

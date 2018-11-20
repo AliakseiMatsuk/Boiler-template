@@ -1,0 +1,6 @@
+mixin l-projects(o = {})
+
+  +b.UL.l-projects(role="list")
+    each project in lProjects.projects
+      +e.project
+        +pr-project(project)

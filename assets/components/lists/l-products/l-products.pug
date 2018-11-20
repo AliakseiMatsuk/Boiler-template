@@ -1,6 +1,6 @@
 mixin l-products(o = {})
 
-  +b.l-products
-    each item in lProducts.products
-      +e.item
-        //- +pr-product(item)
+  +b.UL.l-products(role="list")
+    each product in lProducts.products
+      +e.product
+        //- +pr-product(product)

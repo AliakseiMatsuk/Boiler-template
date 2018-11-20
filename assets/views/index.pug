@@ -8,6 +8,14 @@ block content
     .wrapper
       //- +s-header()
       +s-default({
+        title: "Our projects",
+        link: {
+          text: "All projects",
+          href: "work.html"
+        },
+        slot: "l-projects"
+      })
+      +s-default({
         title: "Our products",
         slot: "l-products"
       })
