@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "title": "QPS-Infra",
+      "description": "Dockerized QA infrastructure solution for test automation",
+      "logo": "qpsinfra"
+    },
+    {
+      "title": "Zafira",
+      "description": "Java-based QA reporting center",
+      "logo": "zafira"
+    },
+    {
+      "title": "Carina",
+      "description": "Java solution for efficient automated testing",
+      "logo": "carina"
+    },
+    {
+      "title": "MCloud",
+      "description": "Cross-platform device farm dedicated to your project",
+      "logo": "mcloud"
+    }
+  ]
+}
+
+
+
+
