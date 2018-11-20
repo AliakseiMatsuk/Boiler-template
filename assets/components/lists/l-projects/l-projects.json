@@ -3,42 +3,42 @@
     {
       "description": "5 Quality solutions for APPs’ market dominance",
       "image": "1",
-      "href": "#"
+      "href": "under-armour"
     },
     {
       "description": "Shared economy solutions for transport software company",
       "image": "2",
-      "href": "#"
+      "href": "car-on-fly"
     },
     {
       "description": "Learning management system with <br> multiplayer for VR &amp; AR",
       "image": "3",
-      "href": "#"
+      "href": "tripointlab"
     },
     {
       "description": "AI based chatbot for hotel management system",
       "image": "4",
-      "href": "#"
+      "href": "r-hotel"
     },
     {
       "description": "Restaurant management system for cocktail bars",
-      "image": "",
-      "href": "#"
+      "image": "5",
+      "href": "qorum"
     },
     {
       "description": "Automated QA in accuracy/critical FinTech environment",
-      "image": "",
-      "href": "#"
+      "image": "6",
+      "href": "landing-club"
     },
     {
       "description": "Complete engineering solutions for the entire QA",
-      "image": "",
-      "href": "#"
+      "image": "7",
+      "href": "smule"
     },
     {
       "description": "Betfair analytic system based on machine learning",
-      "image": "",
-      "href": "#"
+      "image": "8",
+      "href": "betfair-analytics"
     }
   ]
 }

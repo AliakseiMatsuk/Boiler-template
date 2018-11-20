@@ -1,0 +1,6 @@
+mixin l-partners(o = {})
+
+  +b.UL.l-partners(role="list")
+    each partner in lPartners.partners
+      +e.partner
+        +b-partner(partner)

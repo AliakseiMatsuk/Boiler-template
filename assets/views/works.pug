@@ -1,0 +1,16 @@
+extends ../common/pug/layout
+
+block variables
+  - var pageInfo = {title: 'index', description: 'index'}
+
+block content
+  body
+    .wrapper
+      //- +s-header()
+      +s-projects()
+      +s-default({
+        title: "Partners for many years",
+        slot: "l-partners"
+      })
+      //- +s-footer()
+    +scripts()
