@@ -2,6 +2,6 @@ mixin pr-project(o = {})
 
   +b.A.pr-project(href=`${o.href}`)
     +e.ARTICLE.inner
-      +e.image(src=`./images/projects/${o.image}.jpg`, alt=`${o.description}`, data-object-fit="cover")
+      +e.image(src=`./images/projects/${o.image}.jpg`, alt=`${o.description}`, data-object-fit="cover", data-object-position="center")
       +e.description !{o.description}
 
