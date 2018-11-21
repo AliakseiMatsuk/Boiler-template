@@ -7,10 +7,14 @@ block content
   body
     .wrapper
       //- +s-header()
+      +s-intro({
+        title: 'Highest quality under any conditions',
+        overlay: 'works'
+      })
       +s-projects()
       +s-default({
-        title: "Partners for many years",
-        slot: "l-partners"
+        title: 'Partners for many years',
+        slot: 'l-partners'
       })
       //- +s-footer()
     +scripts()
