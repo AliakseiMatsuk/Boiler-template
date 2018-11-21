@@ -6,7 +6,7 @@ mixin s-default(o = {})
 
         +e.top
           if o.title
-            +e.title #{o.title}
+            +e.title.h3 #{o.title}
           if o.link
             +e.link
               +a-arrow(o.link)
