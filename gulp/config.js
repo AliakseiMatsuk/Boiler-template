@@ -14,7 +14,7 @@ module.exports = {
 
 
     assets: {
-        html: `${root}/${assets}/views/*.pug`,
+        html: `${root}/${assets}/views/**/*.pug`,
         htmlData: `${root}/${assets}/components/**/*.json`,
         js: [`${root}/${assets}/js/main.js`],
         jsLibs: `${root}/${assets}/js/vendor/**/*.js`,

@@ -1,7 +1,7 @@
 mixin l-projects(o = {})
 
   +b.UL.l-projects(role="list")
-    each project, index in lProjects.projects
-      if index < o.visibleProjects
+    each project, key in lProjects.projects
+      if o.visibleProjects.includes(key)
         +e.project
           +pr-project(project)

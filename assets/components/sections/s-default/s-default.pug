@@ -1,6 +1,6 @@
 mixin s-default(o = {})
 
-  +b.SECTION.s-default
+  +b.SECTION.s-default(class=`${o.className || ''}`)
     .container
       +e.content
 
@@ -12,4 +12,5 @@ mixin s-default(o = {})
               +a-arrow(o.link)
 
         +e.inner
-          +#{o.slot}(o.slotSettings || {})
+          if o.slot
+            +#{o.slot}(o.slotSettings || {})
