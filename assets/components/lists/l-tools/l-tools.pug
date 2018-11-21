@@ -1,6 +1,6 @@
-mixin l-toolset(o = {})
+mixin l-tools(o = {})
 
-  +b.UL.l-toolset(role="list")
+  +b.UL.l-tools(role="list")
     each tool, key in lTools.tools
       if o.visibleTools.includes(key)
         +e.tool
