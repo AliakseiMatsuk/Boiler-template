@@ -1,2 +1,24 @@
 .l-products
-  /* write your styles here */
+  display flex
+  flex-wrap wrap
+  justify-content center
+  margin-right -10px
+
+  &__product
+    margin-bottom 10px
+    padding-right 10px
+    fw(25%)
+
++media-tablet-mobile()
+  .l-products
+    &__product
+      fw(50%)
+
++media-mobile-480()
+  .l-products
+    margin-right 0
+
+    &__product
+      padding-right 0
+
+      fw(100%)

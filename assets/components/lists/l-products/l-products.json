@@ -3,22 +3,30 @@
     {
       "title": "QPS-Infra",
       "description": "Dockerized QA infrastructure solution for test automation",
-      "logo": "qpsinfra"
+      "logo": "qpsinfra",
+      "className": "_dark",
+      "href": "https://www.qps-infra.io/"
     },
     {
       "title": "Zafira",
       "description": "Java-based QA reporting center",
-      "logo": "zafira"
+      "logo": "zafira",
+      "className": "_light",
+      "href": "http://qaprosoft.github.io/zafira/"
     },
     {
       "title": "Carina",
       "description": "Java solution for efficient automated testing",
-      "logo": "carina"
+      "logo": "carina",
+      "className": "_medium",
+      "href": "http://www.carina-core.io"
     },
     {
       "title": "MCloud",
       "description": "Cross-platform device farm dedicated to your project",
-      "logo": "mcloud"
+      "logo": "mcloud",
+      "href": "https://www.mobiletesting.farm",
+      "layout": "mcloud"
     }
   ]
 }

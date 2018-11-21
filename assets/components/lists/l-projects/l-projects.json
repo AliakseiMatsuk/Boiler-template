@@ -2,42 +2,42 @@
   "projects": {
     "under-armour": {
       "description": "5 Quality solutions for APPs’ market dominance",
-      "image": "1",
+      "layout": "1",
       "href": "under-armour"
     },
     "car-on-fly": {
       "description": "Shared economy solutions for transport software company",
-      "image": "2",
+      "layout": "2",
       "href": "car-on-fly"
     },
     "tripointlab": {
       "description": "Learning management system with <br> multiplayer for VR &amp; AR",
-      "image": "3",
+      "layout": "3",
       "href": "tripointlab"
     },
     "r-hotel": {
       "description": "AI based chatbot for hotel management system",
-      "image": "4",
+      "layout": "4",
       "href": "r-hotel"
     },
     "qorum": {
       "description": "Restaurant management system for cocktail bars",
-      "image": "5",
+      "layout": "5",
       "href": "qorum"
     },
     "landing-club": {
       "description": "Automated QA in accuracy/critical FinTech environment",
-      "image": "6",
+      "layout": "6",
       "href": "landing-club"
     },
     "smule": {
       "description": "Complete engineering solutions for the entire QA",
-      "image": "7",
+      "layout": "7",
       "href": "smule"
     },
     "betfair-analytics": {
       "description": "Betfair analytic system based on machine learning",
-      "image": "8",
+      "layout": "8",
       "href": "betfair-analytics"
     }
   }
