@@ -2,5 +2,5 @@ mixin svg(o = {})
 
   - var svgClass = `svg svg-${o.name} ${o.className || ''}`
 
-  svg(class=`${svgClass}`, role="img")
+  svg(class=`${svgClass}`, role='img')
     use(xlink:href=`#${o.name}`, xlink:title=`${o.title || false }`)
