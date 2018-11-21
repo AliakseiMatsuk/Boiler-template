@@ -13,4 +13,4 @@ mixin s-default(o = {})
 
         +e.inner
           if o.slot
-            +#{o.slot}(o.slotSettings || {})
+            +#{o.slot.name}(o.slot.props || {})

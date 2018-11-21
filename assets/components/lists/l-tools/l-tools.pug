@@ -1,0 +1,7 @@
+mixin l-toolset(o = {})
+
+  +b.UL.l-toolset(role="list")
+    each tool, key in lTools.tools
+      if o.visibleTools.includes(key)
+        +e.tool
+          +e.logo(src=`./images/tools/${tool.logo}.jpeg`, alt=`${tool.alt}`)

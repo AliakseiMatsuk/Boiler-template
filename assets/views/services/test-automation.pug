@@ -15,20 +15,34 @@ block content
       +s-default({
         className: '_centered',
         title: 'View our Work',
-        slot: 'l-projects',
-        slotSettings: {
-          visibleProjects: ['under-armour', 'landing-club', 'smule']
+        slot: {
+          name: 'l-projects',
+          props: {
+            visibleProjects: ['under-armour', 'landing-club', 'smule']
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'Our toolset',
+        slot: {
+          name: 'l-toolset',
+          props: {
+            visibleTools: ['jenkins', 'java', 'maven', 'se', 'carina', 'testng', 'selenium', 'appium']
+          }
         }
       })
       +s-default({
         className: '_centered',
         title: 'Top-level engineering expertise',
-        slot: 'b-cta',
-        slotSettings: {
-          text: 'Focus on long-term partnership lets us get to the very core of the business and assist our clients to create market-dominant products. Our strategy is based on the care, providing exceptional quality in cost-efficient way. Let us know what you are working on, and we guarantee to transform our excellence aspiration into your business value.',
-          actions: {
-            title: 'Get a Quote Today',
-            href: '/contact-us.html'
+        slot: {
+          name: 'b-cta',
+          props: {
+            text: 'Focus on long-term partnership lets us get to the very core of the business and assist our clients to create market-dominant products. Our strategy is based on the care, providing exceptional quality in cost-efficient way. Let us know what you are working on, and we guarantee to transform our excellence aspiration into your business value.',
+            actions: {
+              title: 'Get a Quote Today',
+              href: '/contact-us.html'
+            }
           }
         }
       })

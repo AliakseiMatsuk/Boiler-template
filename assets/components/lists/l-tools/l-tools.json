@@ -1,0 +1,33 @@
+{
+  "tools": {
+    "jenkins": {
+      "logo": "jenkins",
+      "alt": "Will be add"
+    },
+    "java": {
+      "logo": "java",
+      "alt": "Will be add"
+    },
+    "maven": {
+      "logo": "maven",
+      "alt": "Will be add"
+    },
+    "se": {
+      "logo": "carina",
+      "alt": "Will be add"
+    },
+    "testng": {
+      "logo": "testng",
+      "alt": "Will be add"
+    },
+    "selenium": {
+      "logo": "selenium",
+      "alt": "Will be add"
+    },
+    "appium": {
+      "logo": "appium",
+      "alt": "Will be add"
+    }
+  }
+}
+

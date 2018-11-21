@@ -13,14 +13,18 @@ block content
           text: 'All projects',
           href: 'work.html'
         },
-        slot: 'l-projects',
-        slotSettings: {
-          visibleProjects: ['under-armour', 'car-on-fly', 'tripointlab', 'r-hotel']
+        slot: {
+          name: 'l-projects',
+          props: {
+            visibleProjects: ['under-armour', 'car-on-fly', 'tripointlab', 'r-hotel']
+          }
         }
       })
       +s-default({
         title: 'Our products',
-        slot: 'l-products'
+        slot: {
+          name: 'l-products'
+        }
       })
       //- +s-footer()
     +scripts()
