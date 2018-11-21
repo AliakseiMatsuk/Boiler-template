@@ -1,0 +1,7 @@
+mixin b-cta(o = {})
+
+  +b.b-cta(class=`${o.className || ''}`)
+    +e.text #{o.text}
+    if o.actions
+      +e.actions
+        +btn(o.actions)
