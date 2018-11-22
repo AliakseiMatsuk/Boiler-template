@@ -1,0 +1,169 @@
+{
+  "quality-assurance": [
+    {
+      "title": "Functional black-box and grey-box testing",
+      "index": "1"
+    },
+    {
+      "title": "Test planning",
+      "index": "5"
+    },
+    {
+      "title": "Data Analytics testing",
+      "index": "2"
+    },
+    {
+      "title": "Final Release Quality sign off",
+      "index": "6"
+    },
+    {
+      "title": "Manual API calls/responses validation",
+      "index": "3"
+    },
+    {
+      "title": "Test analysis and design",
+      "index": "7"
+    },
+    {
+      "title": "Third-party integrations testing",
+      "index": "4"
+    }
+  ],
+  "qa-management": [
+    {
+      "title": "Building QA teams from day 1",
+      "index": "1"
+    },
+    {
+      "title": "Audit of the specific issues",
+      "index": "4"
+    },
+    {
+      "title": "Coaching the teams on tools and industry best practices",
+      "index": "2"
+    },
+    {
+      "title": "Current process maturity assessment",
+      "index": "5"
+    },
+    {
+      "title": "Setting up sustainable process for test engineering, test execution, reporting and release sign off",
+      "index": "3"
+    }
+  ],
+  "test-automation": [
+    {
+      "title": "Rapid setup of testing infrastructure",
+      "index": "1"
+    },
+    {
+      "title": "Unit / Integration / System white-box test",
+      "index": "5"
+    },
+    {
+      "title": "Execute tests in multithreaded mode in the cloud of real mobile devices",
+      "index": "2"
+    },
+    {
+      "title": "Using AI for automation of XBox apps",
+      "index": "6"
+    },
+    {
+      "title": "Test development for blackbox UI and API layers",
+      "index": "3"
+    },
+    {
+      "title": "Setup CI at WEB and Mobile environments",
+      "index": "7"
+    },
+    {
+      "title": "Automate integrations with third party apps and wearable devices",
+      "index": "4"
+    }
+  ],
+  "vr-application": [
+    {
+      "title": "Build Augmented and Mixed Reality Mobile applications",
+      "index": "1"
+    },
+    {
+      "title": "Develop Cross-platform VR applications",
+      "index": "4"
+    },
+    {
+      "title": "Take care of 3d modeling, animations",
+      "index": "2"
+    },
+    {
+      "title": "Build backend optimized for realtime highload processes",
+      "index": "5"
+    },
+    {
+      "title": "Create Multiplayer processing backend",
+      "index": "3"
+    }
+  ],
+  "data-science": [
+    {
+      "title": "Recommender systems",
+      "index": "1"
+    },
+    {
+      "title": "NLP (natural language processing)",
+      "index": "3"
+    },
+    {
+      "title": "Computer vision (object and movement detection)",
+      "index": "2"
+    },
+    {
+      "title": "Classical data science for health care",
+      "index": "4"
+    }
+  ],
+  "ethical-hacking": [
+    {
+      "title": "We perform red team activities",
+      "index": "1",
+      "description": "Web Application Penetration Testing, Mobile Application Penetration Testing, Network Penetration Testing"
+    },
+    {
+      "title": "We integrate security tests into sdlc",
+      "index": "3"
+    },
+    {
+      "title": "We verify adherence to security standards",
+      "index": "2"
+    }
+  ],
+  "mobile-applications": [
+    {
+      "title": "Native IOS and Android apps for marketplaces (Uber-styled), gaming, fitness, loyalties, ecommerce, eLearning",
+      "description": "1"
+    },
+    {
+      "title": "Single apps for running on all platforms (ex. Unity apps or Xamarin)",
+      "description": "5"
+    },
+    {
+      "title": "Mobile-optimized websites",
+      "description": "2"
+    },
+    {
+      "title": "Fully customizable backend with advanced service management, payment gateways, invoicing, deep analytics, notifications and alert controls.",
+      "description": "6"
+    },
+    {
+      "title": "Multilayer client/server security maintenance",
+      "description": "3"
+    },
+    {
+      "title": "Data analytics integration",
+      "description": "7"
+    },
+    {
+      "title": "IoT integration and fitness wearable devices",
+      "description": "4"
+    }
+  ]
+}
