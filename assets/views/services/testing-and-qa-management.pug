@@ -13,6 +13,16 @@ block content
         overlay: 'test-automation'
       })
       +s-default({
+        className: '_centered _narrow',
+        title: 'QA Management services we perform',
+        slot: {
+          name: 'l-ordered',
+          props: {
+            list: 'qa-management'
+          }
+        }
+      })
+      +s-default({
         className: '_centered',
         title: 'Our toolset',
         slot: {

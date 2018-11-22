@@ -1,0 +1,40 @@
+.l-ordered
+  display flex
+  flex-wrap wrap
+  margin-right -25px
+
+  &__item
+    position relative
+
+    fw(50%)
+
+    padding-right 25px
+    padding-left 60px
+
+    &:not(:last-child)
+      margin-bottom 40px
+    &:before
+      position absolute
+      top 0
+      left 0
+      color $text-color-secondary
+      content attr(data-index)
+      font-weight $font-weight-semibold-text
+      font-size $font-size-large-desktop
+      line-height $line-height-small
+  &__title
+    font-size $font-size-medium-desktop
+    line-height $line-height-default
+  &__description
+    margin-top 13px
+    font-size 1.3rem
+    line-height 24px
++media-mobile()
+  .l-ordered
+    margin-right 0
+    &__item
+      fw(100%)
+      padding-right 0
+      for i in (1 .. 20)
+        &[data-index=\'{i}\']
+          order i
