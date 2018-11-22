@@ -4,7 +4,7 @@ block variables
   - var pageInfo = {title: 'Highest quality under any conditions', description: 'Highest quality under any conditions'}
 
 block content
-  body
+  body.p-work
     .wrapper
       //- +s-header()
       +s-intro({
@@ -16,6 +16,12 @@ block content
         title: 'Partners for many years',
         slot: {
           name: 'l-partners'
+        }
+      })
+      +s-default({
+        title: 'Our products',
+        slot: {
+          name: 'l-products'
         }
       })
       //- +s-footer()

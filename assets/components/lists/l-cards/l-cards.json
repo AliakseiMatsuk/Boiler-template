@@ -1,0 +1,48 @@
+{
+  "vr-ar-application-development": [
+    {
+      "title": "Education",
+      "icon": "education"
+    },
+    {
+      "title": "Healthcare",
+      "icon": "healthcare"
+    },
+    {
+      "title": "Life sciences",
+      "icon": "life-sciences"
+    },
+    {
+      "title": "Arts",
+      "icon": "arts"
+    },
+    {
+      "title": "Entertainment & music",
+      "icon": "entertainment-music"
+    },
+    {
+      "title": "Media",
+      "icon": "media"
+    },
+    {
+      "title": "Business services",
+      "icon": "finance-service"
+    },
+    {
+      "title": "Consumer products & services",
+      "icon": "consumer-products"
+    },
+    {
+      "title": "Advertising & marketing",
+      "icon": "marketing"
+    },
+    {
+      "title": "Games etc...",
+      "icon": "games"
+    }
+  ]
+}
+
+
+
+

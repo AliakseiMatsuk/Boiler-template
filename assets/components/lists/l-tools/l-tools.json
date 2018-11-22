@@ -27,6 +27,66 @@
     "appium": {
       "logo": "appium",
       "alt": "Will be add"
+    },
+    "unity": {
+      "logo": "unity",
+      "alt": "Will be add"
+    },
+    "vuforia": {
+      "logo": "vuforia",
+      "alt": "Will be add"
+    },
+    "arcore": {
+      "logo": "arcore",
+      "alt": "Will be add"
+    },
+    "microsoft-hololens": {
+      "logo": "microsoft-hololens",
+      "alt": "Will be add"
+    },
+    "opencv": {
+      "logo": "opencv",
+      "alt": "Will be add"
+    },
+    "photon": {
+      "logo": "photon",
+      "alt": "Will be add"
+    },
+    "oculus-vr'": {
+      "logo": "oculus-vr'",
+      "alt": "Will be add"
+    },
+    "apple-ar-kit": {
+      "logo": "apple-ar-kit",
+      "alt": "Will be add"
+    },
+    "fiddler": {
+      "logo": "fiddler",
+      "alt": "Will be add"
+    },
+    "android-studio": {
+      "logo": "android-studio",
+      "alt": "Will be add"
+    },
+    "xcode": {
+      "logo": "xcode",
+      "alt": "Will be add"
+    },
+    "test-rails": {
+      "logo": "test-rails",
+      "alt": "Will be add"
+    },
+    "postman": {
+      "logo": "postman",
+      "alt": "Will be add"
+    },
+    "soap-ui": {
+      "logo": "soap-ui",
+      "alt": "Will be add"
+    },
+    "tizen": {
+      "logo": "tizen",
+      "alt": "Will be add"
     }
   }
 }

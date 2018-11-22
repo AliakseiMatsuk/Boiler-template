@@ -1,16 +1,36 @@
 extends ../../common/pug/layout
 
 block variables
-  - var pageInfo = {title: 'Test Automation', description: 'Test Automation'}
+  - var pageInfo = {title: 'VR / AR applications Development', description: 'VR / AR applications Development'}
 
 block content
-  body.p-test-automation
+  body.p-vr-ar-application-development
     .wrapper
       //- +s-header()
       +s-intro({
-        title: 'Test Automation',
-        subtitle: 'Optimize your testing costs by Automation. Let programs test programs: get speed, accuracy and platform coverage as high as you imagine.',
-        overlay: 'test-automation'
+        title: 'VR / AR applications Development',
+        subtitle: 'Imagine your virtual presence at shops, concerts, fashion shows, doctor training, virtual surgery. Our VR / AR team can make it happen.',
+        overlay: 'vr-ar-application-development'
+      })
+      +s-default({
+        className: '_centered',
+        title: 'VR/AR apps for various industries',
+        slot: {
+          name: 'l-cards',
+          props: {
+            cards: 'vr-ar-application-development'
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'Our toolkit',
+        slot: {
+          name: 'l-tools',
+          props: {
+            visibleTools: ['unity', 'vuforia', 'arcore', 'microsoft-hololens', 'opencv', 'photon', 'oculus-vr', 'apple-ar-kit']
+          }
+        }
       })
       +s-default({
         className: '_centered',
@@ -18,17 +38,7 @@ block content
         slot: {
           name: 'l-projects',
           props: {
-            visibleProjects: ['under-armour', 'landing-club', 'smule']
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'Our toolset',
-        slot: {
-          name: 'l-tools',
-          props: {
-            visibleTools: ['jenkins', 'java', 'maven', 'se', 'carina', 'testng', 'selenium', 'appium']
+            visibleProjects: ['tripointlab']
           }
         }
       })

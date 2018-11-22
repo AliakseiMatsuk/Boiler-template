@@ -1,0 +1,6 @@
+mixin l-cards(o = {})
+
+  +b.UL.l-cards(role="list")
+    each card in lCards[o.cards]
+      +e.card
+        +b-card(card)
