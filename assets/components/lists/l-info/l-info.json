@@ -1,0 +1,32 @@
+{
+  "vr-ar-application-development": [
+    {
+      "title": "Online learning",
+      "icon": "online-learning"
+    },
+    {
+      "title": "Healthcare and hospitals",
+      "icon": "healthcare"
+    },
+    {
+      "title": "Tech Museums and Exhibition",
+      "icon": "museums"
+    },
+    {
+      "title": "Retail Product Visualization",
+      "icon": "consumer-products"
+    },
+    {
+      "title": "Architecture and Real Estate",
+      "icon": "architecture"
+    },
+    {
+      "title": "Gaming",
+      "icon": "games"
+    }
+  ]
+}
+
+
+
+
