@@ -4,4 +4,4 @@ mixin l-tools(o = {})
     each tool, key in lTools.tools
       if o.visibleTools.includes(key)
         +e.tool
-          +e.logo(src=`./images/tools/${tool.logo}.jpeg`, alt=`${tool.alt}`)
+          +e.logo(src=`./images/tools/${tool.logo}.jpg`, alt=`${tool.alt}`)

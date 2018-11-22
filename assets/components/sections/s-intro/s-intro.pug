@@ -3,7 +3,7 @@ mixin s-intro(o = {})
   +b.SECTION.s-intro
     +e.image(src=`./images/photos/${o.overlay}.jpg`, alt=`${o.title}`, data-object-fit="cover", data-object-position="center")
     +e.wrapper
-      +e.container.container
+      .container
         +e.inner
           +e.title #{o.title}
           if o.subtitle

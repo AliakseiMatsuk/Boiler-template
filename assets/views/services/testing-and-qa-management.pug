@@ -1,16 +1,26 @@
 extends ../../common/pug/layout
 
 block variables
-  - var pageInfo = {title: 'Test Automation', description: 'Test Automation'}
+  - var pageInfo = {title: 'Testing & QA management', description: 'Testing & QA management'}
 
 block content
-  body.p-test-automation
+  body.p-vr-ar-application-development
     .wrapper
       //- +s-header()
       +s-intro({
-        title: 'Test Automation',
-        subtitle: 'Optimize your testing costs by Automation. Let programs test programs: get speed, accuracy and platform coverage as high as you imagine.',
+        title: 'Testing & QA management',
+        subtitle: 'Originating from QA company Qaprosoft is an expert-level QA agent for any of your challenges. We offer high standards for quality inside your project in any way it is comfortable for you. While you build your product, our team works to make it perfect.',
         overlay: 'test-automation'
+      })
+      +s-default({
+        className: '_centered',
+        title: 'Our toolset',
+        slot: {
+          name: 'l-tools',
+          props: {
+            visibleTools: ['fiddler', 'android-studio', 'xcode', 'test-rails', 'postman', 'soap-ui', 'tizen']
+          }
+        }
       })
       +s-default({
         className: '_centered',
@@ -19,16 +29,6 @@ block content
           name: 'l-projects',
           props: {
             visibleProjects: ['under-armour', 'landing-club', 'smule']
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'Our toolset',
-        slot: {
-          name: 'l-tools',
-          props: {
-            visibleTools: ['jenkins', 'java', 'maven', 'se', 'carina', 'testng', 'selenium', 'appium']
           }
         }
       })

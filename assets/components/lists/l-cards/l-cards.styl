@@ -1,0 +1,19 @@
+.l-cards
+  display flex
+  flex-wrap wrap
+  justify-content center
+
+  &__card
+    fw(20%)
++media-tablet()
+  .l-cards
+    &__card
+      fw(33.33333%)
++media-mobile-600()
+  .l-cards
+    &__card
+      fw(50%)
++media-mobile-480()
+  .l-cards
+    &__card
+      fw(100%)
