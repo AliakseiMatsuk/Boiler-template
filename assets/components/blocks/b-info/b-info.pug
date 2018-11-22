@@ -1,0 +1,10 @@
+mixin b-info(o = {})
+
+  +b.FIGURE.b-info
+    +e.FIGCAPTION.content
+      +e.icon
+        +svg({
+          name: o.icon,
+          title: o.title
+        })
+      +e.title #{o.title}
