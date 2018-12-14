@@ -139,31 +139,31 @@
   "mobile-applications": [
     {
       "title": "Native IOS and Android apps for marketplaces (Uber-styled), gaming, fitness, loyalties, ecommerce, eLearning",
-      "description": "1"
+      "index": "1"
     },
     {
       "title": "Single apps for running on all platforms (ex. Unity apps or Xamarin)",
-      "description": "5"
+      "index": "5"
     },
     {
       "title": "Mobile-optimized websites",
-      "description": "2"
+      "index": "2"
     },
     {
       "title": "Fully customizable backend with advanced service management, payment gateways, invoicing, deep analytics, notifications and alert controls.",
-      "description": "6"
+      "index": "6"
     },
     {
       "title": "Multilayer client/server security maintenance",
-      "description": "3"
+      "index": "3"
     },
     {
       "title": "Data analytics integration",
-      "description": "7"
+      "index": "7"
     },
     {
       "title": "IoT integration and fitness wearable devices",
-      "description": "4"
+      "index": "4"
     }
   ]
 }

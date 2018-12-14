@@ -1,0 +1,60 @@
+extends ../../common/pug/layout
+
+block variables
+  - var pageInfo = {title: 'Security Audit', description: 'Security Audit'}
+
+block content
+  body.p-test-automation
+    .wrapper
+      //- +s-header()
+      +s-intro({
+        title: 'Security Audit',
+        subtitle: 'Make sure there are no vulnerabilities in your software and the data of your users is secure. We will help you with audit and system improvements.',
+        overlay: 'security-audit'
+      })
+      +s-default({
+        className: '_centered _narrow',
+        title: 'Ethical Hacking services we perform',
+        slot: {
+          name: 'l-ordered',
+          props: {
+            list: 'ethical-hacking'
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'Approaches',
+        slot: {
+          name: 'l-cards',
+          props: {
+            cards: 'security-audit'
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'Our toolkit',
+        slot: {
+          name: 'l-tools',
+          props: {
+            visibleTools: ['wire-shark', 'john-the-ripper', 'back-track', 'kali', 'metasploit', 'social-engineer', 'acunetix', 'owasp-zap']
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'Top-level engineering expertise',
+        slot: {
+          name: 'b-cta',
+          props: {
+            text: 'Focus on long-term partnership lets us get to the very core of the business and assist our clients to create market-dominant products. Our strategy is based on the care, providing exceptional quality in cost-efficient way. Let us know what you are working on, and we guarantee to transform our excellence aspiration into your business value.',
+            actions: {
+              title: 'Get a Quote Today',
+              href: '/contact-us.html'
+            }
+          }
+        }
+      })
+      //- +s-footer()
+    +scripts()

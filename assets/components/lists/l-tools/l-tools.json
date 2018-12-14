@@ -13,6 +13,10 @@
       "alt": "Will be add"
     },
     "se": {
+      "logo": "se",
+      "alt": "Will be add"
+    },
+    "carina": {
       "logo": "carina",
       "alt": "Will be add"
     },
@@ -52,8 +56,8 @@
       "logo": "photon",
       "alt": "Will be add"
     },
-    "oculus-vr'": {
-      "logo": "oculus-vr'",
+    "oculus-vr": {
+      "logo": "oculus-vr",
       "alt": "Will be add"
     },
     "apple-ar-kit": {
@@ -86,6 +90,102 @@
     },
     "tizen": {
       "logo": "tizen",
+      "alt": "Will be add"
+    },
+    "h2o": {
+      "logo": "h2o",
+      "alt": "Will be add"
+    },
+    "hadoop": {
+      "logo": "hadoop",
+      "alt": "Will be add"
+    },
+    "cassandra": {
+      "logo": "cassandra",
+      "alt": "Will be add"
+    },
+    "ibm-watson": {
+      "logo": "ibm-watson",
+      "alt": "Will be add"
+    },
+    "scikit-learn": {
+      "logo": "scikit-learn",
+      "alt": "Will be add"
+    },
+    "tensor-flow": {
+      "logo": "tensor-flow",
+      "alt": "Will be add"
+    },
+    "python": {
+      "logo": "python",
+      "alt": "Will be add"
+    },
+    "r": {
+      "logo": "r",
+      "alt": "Will be add"
+    },
+    "wire-shark": {
+      "logo": "wire-shark",
+      "alt": "Will be add"
+    },
+    "john-the-ripper": {
+      "logo": "john-the-ripper",
+      "alt": "Will be add"
+    },
+    "back-track": {
+      "logo": "back-track",
+      "alt": "Will be add"
+    },
+    "kali": {
+      "logo": "kali",
+      "alt": "Will be add"
+    },
+    "metasploit": {
+      "logo": "metasploit",
+      "alt": "Will be add"
+    },
+    "social-engineer": {
+      "logo": "social-engineer",
+      "alt": "Will be add"
+    },
+    "acunetix": {
+      "logo": "acunetix",
+      "alt": "Will be add"
+    },
+    "owasp-zap": {
+      "logo": "owasp-zap",
+      "alt": "Will be add"
+    },
+    "android-sdk": {
+      "logo": "android-sdk",
+      "alt": "Will be add"
+    },
+    "cordova": {
+      "logo": "cordova",
+      "alt": "Will be add"
+    },
+    "ios-sdk": {
+      "logo": "ios-sdk",
+      "alt": "Will be add"
+    },
+    "microsoft-net": {
+      "logo": "microsoft-net",
+      "alt": "Will be add"
+    },
+    "swift": {
+      "logo": "swift",
+      "alt": "Will be add"
+    },
+    "xamarin": {
+      "logo": "xamarin",
+      "alt": "Will be add"
+    },
+    "cocoapods": {
+      "logo": "cocoapods",
+      "alt": "Will be add"
+    },
+    "java": {
+      "logo": "java",
       "alt": "Will be add"
     }
   }

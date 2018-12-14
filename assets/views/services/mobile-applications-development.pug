@@ -1,0 +1,71 @@
+extends ../../common/pug/layout
+
+block variables
+  - var pageInfo = {title: 'Mobile applications Development', description: 'Mobile applications Development'}
+
+block content
+  body.p-test-automation
+    .wrapper
+      //- +s-header()
+      +s-intro({
+        title: 'Mobile applications Development',
+        subtitle: 'Make sure your customers take your business with them wherever you go. Our team can turn the app of any complexity into live solution.',
+        overlay: 'mobile-applications-development'
+      })
+      +s-default({
+        className: '_centered _narrow',
+        title: 'Mobile Applications Development services',
+        slot: {
+          name: 'l-ordered',
+          props: {
+            list: 'mobile-applications'
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'We deliver user-friendly and intuitive mobile apps for:',
+        slot: {
+          name: 'l-cards',
+          props: {
+            className: '_slim',
+            cards: 'mobile-applications-development'
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'Our toolset',
+        slot: {
+          name: 'l-tools',
+          props: {
+            visibleTools: ['android-sdk', 'cordova', 'ios-sdk', 'microsoft-net', 'swift', 'xamarin', 'cocoapods', 'java']
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'View our Work',
+        slot: {
+          name: 'l-projects',
+          props: {
+            visibleProjects: ['car-on-fly', 'qorum']
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'Top-level engineering expertise',
+        slot: {
+          name: 'b-cta',
+          props: {
+            text: 'Focus on long-term partnership lets us get to the very core of the business and assist our clients to create market-dominant products. Our strategy is based on the care, providing exceptional quality in cost-efficient way. Let us know what you are working on, and we guarantee to transform our excellence aspiration into your business value.',
+            actions: {
+              title: 'Get a Quote Today',
+              href: '/contact-us.html'
+            }
+          }
+        }
+      })
+      //- +s-footer()
+    +scripts()

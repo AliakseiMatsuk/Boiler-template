@@ -14,11 +14,35 @@ block content
       })
       +s-default({
         className: '_centered',
+        title: 'Virtual Reality & Augmented Reality applications',
+        slot: {
+          name: 'b-description',
+          props: {
+            image: {
+              src: 'photos/vr-description',
+              alt: 'Virtual Reality & Augmented Reality applications'
+            },
+            content: 'Strong team working with Unity3d and UnrealEngine enables to deliver AR and VR apps working in any environment, from IOS (ARKit) and Android (ARCore) to desktop applications for Oculus and HTC Vive helmets'
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
         title: 'VR/AR apps for various industries',
         slot: {
           name: 'l-cards',
           props: {
             cards: 'vr-ar-application-development'
+          }
+        }
+      })
+      +s-default({
+        className: '_centered _narrow',
+        title: 'Our core development team',
+        slot: {
+          name: 'l-ordered',
+          props: {
+            list: 'vr-application'
           }
         }
       })

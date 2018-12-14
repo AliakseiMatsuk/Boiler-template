@@ -13,12 +13,12 @@ block content
         overlay: 'test-automation'
       })
       +s-default({
-        className: '_centered',
-        title: 'View our Work',
+        className: '_centered _narrow _lighter',
+        title: 'Test Automation services we perform',
         slot: {
-          name: 'l-projects',
+          name: 'l-ordered',
           props: {
-            visibleProjects: ['under-armour', 'landing-club', 'smule']
+            list: 'test-automation'
           }
         }
       })
@@ -29,6 +29,16 @@ block content
           name: 'l-tools',
           props: {
             visibleTools: ['jenkins', 'java', 'maven', 'se', 'carina', 'testng', 'selenium', 'appium']
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'View our Work',
+        slot: {
+          name: 'l-projects',
+          props: {
+            visibleProjects: ['under-armour', 'landing-club', 'smule']
           }
         }
       })

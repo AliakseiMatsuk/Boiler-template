@@ -2,18 +2,27 @@
   display flex
   flex-wrap wrap
   justify-content center
-
+  &._slim
+    .l-cards
+      &__card
+        fw(25%)
   &__card
     fw(20%)
+
 +media-tablet()
   .l-cards
     &__card
+    &._slim .l-cards__card
       fw(33.33333%)
+
 +media-mobile-600()
   .l-cards
     &__card
+    &._slim .l-cards__card
       fw(50%)
+
 +media-mobile-480()
   .l-cards
     &__card
+    &._slim .l-cards__card
       fw(100%)

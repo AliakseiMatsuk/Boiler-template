@@ -12,5 +12,7 @@ mixin s-default(o = {})
               +a-arrow(o.link)
 
         +e.inner
+          if o.description
+            +e.P.description._centered #{o.description}
           if o.slot
             +#{o.slot.name}(o.slot.props || {})

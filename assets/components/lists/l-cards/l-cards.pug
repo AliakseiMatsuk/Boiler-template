@@ -1,6 +1,6 @@
 mixin l-cards(o = {})
 
-  +b.UL.l-cards(role="list")
+  +b.UL.l-cards(class=`${o.className || ''}`, role="list")
     each card in lCards[o.cards]
       +e.card
         +b-card(card)

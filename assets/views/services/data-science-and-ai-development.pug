@@ -1,0 +1,70 @@
+extends ../../common/pug/layout
+
+block variables
+  - var pageInfo = {title: 'Data Science and AI Development', description: 'Data Science and AI Development'}
+
+block content
+  body.p-vr-ar-application-development
+    .wrapper
+      //- +s-header()
+      +s-intro({
+        title: 'Data Science and AI Development',
+        subtitle: 'Build a model to predict equipment failure, farm operations, diseases, finance risks or product demand. Our Data Science team will help.',
+        overlay: 'data-science-and-ai-development'
+      })
+      +s-default({
+        className: '_centered _narrow',
+        description: 'Highly qualified team with PhD and MSc degrees, deep mathematical proficiency and extensive practical expertise in the field of machine learning, data science and data processing implement:',
+        slot: {
+          name: 'l-ordered',
+          props: {
+            list: 'data-science'
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'Our toolset',
+        slot: {
+          name: 'l-tools',
+          props: {
+            visibleTools: ['h2o', 'hadoop', 'cassandra', 'ibm-watson', 'scikit-learn', 'tensor-flow', 'python', 'r']
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        description: 'Our team has deep knowledge-base in creating and integrating Artificial Intelligence technology within the customer’s business environment whether it be:',
+        slot: {
+          name: 'l-cards',
+          props: {
+            cards: 'data-science-and-ai-development'
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'View our Work',
+        slot: {
+          name: 'l-projects',
+          props: {
+            visibleProjects: ['r-hotel', 'betfair-analytics']
+          }
+        }
+      })
+      +s-default({
+        className: '_centered',
+        title: 'Top-level engineering expertise',
+        slot: {
+          name: 'b-cta',
+          props: {
+            text: 'Focus on long-term partnership lets us get to the very core of the business and assist our clients to create market-dominant products. Our strategy is based on the care, providing exceptional quality in cost-efficient way. Let us know what you are working on, and we guarantee to transform our excellence aspiration into your business value.',
+            actions: {
+              title: 'Get a Quote Today',
+              href: '/contact-us.html'
+            }
+          }
+        }
+      })
+      //- +s-footer()
+    +scripts()

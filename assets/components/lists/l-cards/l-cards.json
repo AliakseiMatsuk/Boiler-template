@@ -40,6 +40,100 @@
       "title": "Games etc...",
       "icon": "games"
     }
+  ],
+  "data-science-and-ai-development": [
+    {
+      "title": "Retail",
+      "icon": "consumer-products"
+    },
+    {
+      "title": "Social media",
+      "icon": "mcloud-platforms"
+    },
+    {
+      "title": "Marketing",
+      "icon": "marketing"
+    },
+    {
+      "title": "Healthcare",
+      "icon": "healthcare"
+    },
+    {
+      "title": "Science",
+      "icon": "life-sciences"
+    },
+    {
+      "title": "Agriculture",
+      "icon": "agriculture"
+    },
+    {
+      "title": "Manufacturing",
+      "icon": "manufacturing"
+    },
+    {
+      "title": "Financial Service",
+      "icon": "finance-service"
+    },
+    {
+      "title": "E-commerce",
+      "icon": "e-commerce"
+    },
+    {
+      "title": "etc...",
+      "icon": "games"
+    }
+  ],
+  "security-audit": [
+    {
+      "title": "Manual and Automated",
+      "icon": "manual"
+    },
+    {
+      "title": "Ad-hoc and Ongoing",
+      "icon": "ad-hoc"
+    },
+    {
+      "title": "Black/Gray/White Approach",
+      "icon": "approach"
+    },
+    {
+      "title": "Scheduled and unexpected",
+      "icon": "scheduled"
+    }
+  ],
+  "mobile-applications-development": [
+    {
+      "title": "Education",
+      "icon": "education"
+    },
+    {
+      "title": "Media & Entertainment",
+      "icon": "media"
+    },
+    {
+      "title": "Sports & Health",
+      "icon": "healthcare"
+    },
+    {
+      "title": "Travel & Hospitality",
+      "icon": "traveling"
+    },
+    {
+      "title": "Logistics",
+      "icon": "logistics"
+    },
+    {
+      "title": "B2B",
+      "icon": "finance-service"
+    },
+    {
+      "title": "B2C",
+      "icon": "consumer-products"
+    },
+    {
+      "title": "Etc...",
+      "icon": "games"
+    }
   ]
 }
 

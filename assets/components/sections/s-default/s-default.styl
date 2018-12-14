@@ -1,6 +1,7 @@
 .s-default
   padding 40px 0
-
+  &._lighter
+    background-color $bg-color-lighter
   &._centered
     .s-default
       &__top
@@ -19,5 +20,10 @@
     font-weight $font-weight-semibold-text
     font-size $font-size-big-desktop
     line-height 2
+  &__description
+    margin 130px auto 100px
+    max-width 570px
+    font-size 22px
+    line-height 36px
   &__link
     display flex
