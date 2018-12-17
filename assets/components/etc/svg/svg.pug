@@ -1,6 +1,7 @@
 mixin svg(o = {})
+  - var ariaLabelled = o.title ? `${(o.name + '-' + o.title).split(' ').join('').toLowerCase()}` : false;
 
-  - var svgClass = `svg svg-${o.name} ${o.className || ''}`
-
-  svg(class=`${svgClass}`, role='img')
-    use(xlink:href=`#${o.name}`, xlink:title=`${o.title || false }`)
+  svg.svg(class=`svg-${o.name} ${o.className || ''}`, focusable='false', role='img', aria-labelledby=ariaLabelled)
+    if o.title
+      title(id=`${ariaLabelled}`) #{o.title}
+    use(xlink:href=`#${o.name}`)

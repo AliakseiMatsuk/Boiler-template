@@ -13,6 +13,20 @@ block content
         overlay: 'mobile-applications-development'
       })
       +s-default({
+        className: '_centered',
+        title: 'Mobile Development',
+        slot: {
+          name: 'b-description',
+          props: {
+            image: {
+              src: 'photos/mobile-development',
+              alt: 'Mobile Development'
+            },
+            content: 'Our high skilled mobile app developers handle the entire project lifecycle (from idea to final product) using a large stack of cutting-edge technologies, individual development process for each project and industry best practices applied wisely.'
+          }
+        }
+      })
+      +s-default({
         className: '_centered _narrow',
         title: 'Mobile Applications Development services',
         slot: {

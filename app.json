@@ -1,5 +1,5 @@
 {
-  "name": "brain_games",
+  "name": "Qaprosoft",
   "scripts": {
   },
   "env": {
@@ -8,7 +8,8 @@
     "ROOT_FOLDER": ".",
     "ASSETS_FOLDER": "assets",
     "DIST_FOLDER": "public",
-    "IMAGES_FOLDER": "images"
+    "IMAGES_FOLDER": "images",
+    "MINIFY": "true"
   },
   "formation": {
   },

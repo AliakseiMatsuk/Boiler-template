@@ -1,7 +1,7 @@
 mixin s-intro(o = {})
 
   +b.SECTION.s-intro
-    +e.image(src=`./images/photos/${o.overlay}.jpg`, alt=`${o.title}`, data-object-fit="cover", data-object-position="center")
+    +e.image(src=`${ROOT_FOLDER}/${IMAGES_FOLDER}/photos/${o.overlay}.jpg`, alt=`${o.title}`, data-object-fit="cover", data-object-position="center")
     +e.wrapper
       .container
         +e.inner

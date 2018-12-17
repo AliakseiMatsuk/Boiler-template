@@ -1,27 +1,27 @@
 mixin b-link(o = {})
 
-    +b.b-link(class=`${o.className || ''}`)
-        if o.href && o.icon
-            +e.link(href=`${o.href}`)
-                +svg({
-                    name: o.icon,
-                    className: 'b-link__icon'
-                })
-                +e.SPAN.link-value #{o.text}
-        else if o.href
-            +e.link(href=`${o.href}`) #{o.text}
-        else if o.icon && o.text
-            +e.BUTTON.link
-                +svg({
-                    name: o.icon,
-                    className: 'b-link__icon'
-                })
-                +e.SPAN.link-value #{o.text}
-        else if o.icon
-            +e.BUTTON.link
-                +svg({
-                    name: o.icon,
-                    className: 'b-link__icon'
-                })
-        else
-            +e.BUTTON.link #{o.text}
+  +b.b-link(class=`${o.className || ''}`)
+    if o.href && o.icon
+      +e.link(href=`${o.href}`)
+        +svg({
+          name: o.icon,
+          className: 'b-link__icon'
+        })
+        +e.SPAN.link-value #{o.text}
+    else if o.href
+      +e.link(href=`${o.href}`) #{o.text}
+    else if o.icon && o.text
+      +e.BUTTON.link
+        +svg({
+          name: o.icon,
+          className: 'b-link__icon'
+        })
+        +e.SPAN.link-value #{o.text}
+    else if o.icon
+      +e.BUTTON.link
+        +svg({
+          name: o.icon,
+          className: 'b-link__icon'
+        })
+    else
+      +e.BUTTON.link #{o.text}

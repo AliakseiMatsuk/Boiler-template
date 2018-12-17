@@ -10,7 +10,22 @@ block content
       +s-intro({
         title: 'Testing & QA management',
         subtitle: 'Originating from QA company Qaprosoft is an expert-level QA agent for any of your challenges. We offer high standards for quality inside your project in any way it is comfortable for you. While you build your product, our team works to make it perfect.',
-        overlay: 'test-automation'
+        overlay: 'testing-qa-management'
+      })
+      +s-default({
+        className: '_centered',
+        title: 'Manual QA',
+        slot: {
+          name: 'b-description',
+          props: {
+            image: {
+              src: 'photos/manual-qa',
+              alt: 'Manual QA'
+            },
+            title: 'Integrate your team with top-level QA Engineers.',
+            content: 'Within years of co-operation we applied our competencies to build sustainable quality for the applications with more than 10 million of daily active users load. Our engineers are responsible for the quality throughout complete release cycle: from initial test planning till QA department sign off.'
+          }
+        }
       })
       +s-default({
         className: '_centered _narrow',
@@ -19,6 +34,21 @@ block content
           name: 'l-ordered',
           props: {
             list: 'quality-assurance'
+          }
+        }
+      })
+      +s-default({
+        className: '_centered _lighter',
+        title: 'QA Process Audit and Improvement',
+        slot: {
+          name: 'b-description',
+          props: {
+            image: {
+              src: 'photos/qa-process-audit',
+              alt: 'QA Process Audit and Improvement'
+            },
+            title: 'We’re open to share the expertise we’ve built for the years of QA consulting.',
+            content: 'If you are just building your QA department from scratch, we can provide you with proven ways to organize it in effective way ideally fitted for your SDLC. Also we can perform audit for cost-effect optimization and existing process improvements.'
           }
         }
       })

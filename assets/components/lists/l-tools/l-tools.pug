@@ -4,4 +4,4 @@ mixin l-tools(o = {})
     each tool in o.visibleTools
       - var {logo, alt} = lTools.tools[tool]
       +e.tool
-        +e.logo(src=`./images/tools/${logo}.jpg`, alt=`${alt}`)
+        +e.logo(src=`${ROOT_FOLDER}/${IMAGES_FOLDER}/tools/${logo}.jpg`, alt=`${alt}`)

@@ -48,6 +48,6 @@ module.exports = {
         spriteImg: `${root}/${assets}/${img}/sprite/*.+(png|gif|jpg|jpeg|PNG|JPG|JPEG)`,
         spriteSvg: `${root}/${assets}/${img}/sprite/*.svg`,
     },
-    autoprefixerConfig: ['last 5 versions', '> 1%']
+    autoprefixerConfig: ['last 2 versions', '> 1%']
 };
 

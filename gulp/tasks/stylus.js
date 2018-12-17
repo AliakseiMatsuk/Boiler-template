@@ -20,7 +20,6 @@ module.exports = () => {
         console.log('\x1b[31m', `${details.name}: Original - ${(details.stats.originalSize / 1e3).toFixed(1)} kb`);
         console.log('\x1b[32m', `${details.name}: Min - ${(details.stats.minifiedSize / 1e3).toFixed(1)} kb`);
       })))
-      .pipe($.gp.if($.config.minify, $.gp.csso()))
       .pipe($.gp.sourcemaps.write('.'))
       .pipe($.gulp.dest($.config.public.css))
       .pipe($.gp.if($.config.reload, $.browserSync.stream()));

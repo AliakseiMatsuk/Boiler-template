@@ -13,6 +13,21 @@ block content
         overlay: 'security-audit'
       })
       +s-default({
+        className: '_centered',
+        title: 'Security Testing',
+        slot: {
+          name: 'b-description',
+          props: {
+            image: {
+              src: 'code-example',
+              alt: 'Security Testing'
+            },
+            title: 'Make sure your system is secure for end users.',
+            content: 'Our OWASP-certified engineers can perform full security audit of the systems or help you to prepare your system for HIPAA-compliance certification.'
+          }
+        }
+      })
+      +s-default({
         className: '_centered _narrow',
         title: 'Ethical Hacking services we perform',
         slot: {

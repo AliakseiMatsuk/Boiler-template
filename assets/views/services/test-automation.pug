@@ -13,6 +13,21 @@ block content
         overlay: 'test-automation'
       })
       +s-default({
+        className: '_centered _lighter',
+        title: 'Automated testing',
+        slot: {
+          name: 'b-description',
+          props: {
+            image: {
+              src: 'photos/automated-testing',
+              alt: 'Automated testing'
+            },
+            title: 'Save budget by highly efficient cross-platform automation.',
+            content: 'Our expert-level SDET’s are the core contributors of opensource automation framework <a href="https://www.carina-core.io/" target="_blank" rel="noopener">Carina</a>, which is a perfect all-in-one solution for all layers of automation (WEB / Mobile / API / DB). It is built on the basis of Appium, Selenium and TestNG and provides great cost-saving features. 70% of code is reused between Android and IOS platform automated tests.'
+          }
+        }
+      })
+      +s-default({
         className: '_centered _narrow _lighter',
         title: 'Test Automation services we perform',
         slot: {
