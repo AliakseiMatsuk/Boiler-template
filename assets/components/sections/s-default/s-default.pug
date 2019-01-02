@@ -2,17 +2,20 @@ mixin s-default(o = {})
 
   +b.SECTION.s-default(class=`${o.className || ''}`)
     .container
-      +e.content
+      +e.wrapper
+        if o.top
+          +e.top(class=`${o.top.className || ''}`)
+            if o.top.title
+              +e.H4.title._primary._fwsemibold #{o.top.title}
+            if o.top.link
+              +e.link
+                +a-arrow(o.top.link)
 
-        +e.top
-          if o.title
-            +e.title #{o.title}
-          if o.link
-            +e.link
-              +a-arrow(o.link)
-
-        +e.inner
-          if o.description
-            +e.P.description._centered #{o.description}
-          if o.slot
-            +#{o.slot.name}(o.slot.props || {})
+        if o.inner
+          +e.inner(class=`${o.inner.className || ''}`)
+            if o.inner.description
+              +e.H4.description._big._centered #{o.inner.description}
+            if o.inner.data
+              +e.data !{o.inner.data}
+            if o.inner.slot
+              +#{o.inner.slot.name}(o.inner.slot.props || {})

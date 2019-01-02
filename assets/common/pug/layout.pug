@@ -1,26 +1,26 @@
-include bemto
-include mixins
-include functions
-include scripts
+include bemto.pug
+include mixins.pug
+include functions.pug
+include scripts.pug
 - var { ROOT_FOLDER, IMAGES_FOLDER } = process.env;
 block variables
 
 doctype html
-html(lang="en")
+html(lang='en')
   head
-    meta(charset="utf-8")
-    base(href="/")
-    meta(http-equiv='x-ua-compatible', content='ie=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(charset='utf-8')
+    base(href='/')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
 
-    title Qaprosoft #{pageInfo.title}
+    title Qaprosoft #{PAGEINFO.title}
 
-    meta(name='description', content=`${pageInfo.description}`)
-    meta(name='format-detection', content='telephone=no')
+    meta(name='description' content=`${PAGEINFO.description}`)
+    meta(name='format-detection' content='telephone=no')
 
-    link(href='css/common.css', rel='stylesheet' )
+    link(href='css/common.css' rel='stylesheet')
 
-    include tools/google.html
-    include tools/facebook.html
-    include tools/hotjar.html
+    //- include tools/google.html
+    //- include tools/facebook.html
+    //- include tools/hotjar.html
   block content

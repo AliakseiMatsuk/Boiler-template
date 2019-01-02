@@ -71,7 +71,6 @@ module.exports = () => {
       }))
       .pipe($.svgSymbols({
         class: `.svg-%f`,
-        fontSize: 10,
         svgAttrs: {
           class: 'svg-templates',
           'aria-hidden': 'true'

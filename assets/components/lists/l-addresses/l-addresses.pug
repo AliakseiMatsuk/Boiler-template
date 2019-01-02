@@ -1,0 +1,8 @@
+mixin l-addresses(o = {})
+
+  +b.UL.l-addresses
+    each address in o
+      +e.item
+        +e.P.title._light._xsmall._fwsemibold #{address.title}
+        p._light._xsmall._fwlight #{address.street}
+        p._light._xsmall._fwlight #{address.city}

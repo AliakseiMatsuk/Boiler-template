@@ -1,0 +1,139 @@
+.qap
+  .s-careers
+    padding-bottom 120px
+  .l-vacancies
+    margin 0
+    padding 0
+    list-style none
+
+    &__vacancy
+      border 2px solid rgba($border-color-primary, .25)
+      background-color $bg-color-lighter
+
+      trbgb()
+      &:hover
+        border-color $border-color-primary
+
+        .l-vacancies
+          &__arrow
+            opacity 1
+      &._active
+        border-color $border-color-primary
+        background-color $bg-color-light
+
+        .l-vacancies
+          &__arrow
+            display none
+          &__close
+            display block
+      &:not(:last-child)
+        margin-bottom 9px
+    &__preview
+      display block
+      overflow visible
+      padding 30px 39px 31px 37px
+      width 100%
+      outline none
+      border none
+      border-radius 0
+      background transparent
+      font-family inherit
+      cursor pointer
+
+      &:hover
+        .b-close:before,
+        .b-close:after
+          background-color $bg-color-darker
+      &-inner
+        display flex
+        justify-content space-between
+        align-items center
+      .b-close:before,
+      .b-close:after
+        trbg()
+    &__title
+      color $text-color-primary
+      text-align left
+      letter-spacing .3px
+      // font-size $font-size-medium-desktop
+      font-size 24px
+      // line-height $line-height-medium
+      line-height 1.5
+      transition font-weight 0s .3s
+    &__arrow
+      opacity 0
+
+      tro()
+    &__close
+      display none
+    &__inner
+      display none
+      margin-top -10px
+      padding 0 39px 38px 37px
+    &__description
+      margin 0 0 43px
+      color $text-color-primary
+      word-spacing 0
+      letter-spacing 0
+      // font-size $font-size-xsmall-desktop
+      font-size 18px
+      // line-height $line-height-default
+      line-height 1.667
+    &__details
+      margin 0 auto
+      max-width 878px
+
+      &-group
+        &:not(:last-child)
+          margin-bottom 30px
+      &-title
+        margin 0
+        color $text-color-primary
+        letter-spacing 0
+        font-weight $font-weight-semibold
+        // font-size $font-size-xsmall-desktop
+        font-size 18px
+        // line-height $line-height-default
+        line-height 1.667
+      &-list
+        margin 0
+        padding 0
+        list-style none
+
+        &-item
+          color $text-color-base
+          letter-spacing -.05px
+          // font-size $font-size-xsmall-desktop
+          font-size 18px
+          // line-height $line-height-default
+          line-height 1.667
+
+          &:before
+            float left
+            margin-right 7px
+            content '\2014'
+          p
+            margin 0
+            word-spacing 0
+            letter-spacing 0
+          strong
+            font-weight $font-weight-semibold-text
+    &__apply
+      display flex
+      justify-content flex-end
+      margin-top 30px
+
++media-tablet-mobile()
+  .qap
+    .s-careers
+      padding-bottom 60px
+    .l-vacancies
+      &__title
+        font-size 20px
+      &__arrow
+        display none
+      &__preview
+        padding 20px 29px 21px 27px
+      &__inner
+        display none
+        padding 0 29px 28px 27px

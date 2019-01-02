@@ -1,0 +1,41 @@
+extends ../../common/pug/layout.pug
+
+block variables
+  - var PAGEINFO = {title: 'Automated QA in accuracy/critical FinTech environment', description: 'Automated QA in accuracy/critical FinTech environment'}
+
+block content
+  body.p-lending-club
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: 'Automated QA in accuracy/critical FinTech environment',
+          overlay: 'projects/6'
+        })
+        +s-default({
+          top: {
+            title: 'Situation preview'
+          },
+          inner: {
+            data:
+            '<p>Lending Club is the world’s largest online marketplace connecting investors and borrowers. Lending Club operates at a lower cost compared to the traditional bank lending programs and passes the savings on to borrowers in the form of lower rates and to investors in the form of solid returns. Needless to say, such financial services have extra priority in stability, functional correctness and overall quality.</p>' +
+            '<p>Lending Club was looking for a partner that could assure high stability and absence of failures in critical functionality. The project had to be accomplished within strict time schedule.</p>' +
+            '<p>Qaprosoft was chosen for its proven top-level expertise in QA.</p>',
+            slot: {
+              name: 'l-ordered',
+              props: {
+                list: 'qorum'
+              }
+            }
+          }
+        })
+        +s-default({
+          top: {
+            title: 'Continuous co-operation'
+          },
+          inner: {
+            data: '<p>We take full responsibility for the quality of the features we work on. We’ve reached release Acceptance-level coverage and continue test development for advanced scenarios. The client is able to run required sets of test cases whenever is needed. Along with CI we’ve setup solid process for automation maintenance so there are no bottlenecks in the runs.</p>'
+          }
+        })
+      +s-footer()
+    +scripts()

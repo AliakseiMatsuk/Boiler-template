@@ -1,0 +1,30 @@
+extends ../../common/pug/layout.pug
+
+block variables
+  - var PAGEINFO = {title: 'Restaurant management system for cocktail bars', description: 'Restaurant management system for cocktail bars'}
+
+block content
+  body.p-qorum
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: 'Restaurant management system for cocktail bars',
+          overlay: 'projects/5'
+        })
+        +s-default({
+          top: {
+            title: 'Situation preview'
+          },
+          inner: {
+            data: '<p>Qorum is emerging company in Californian restaurant software market. The project idea was to create mobile app focused on improving every part of the nightlife experience by providing a selection of hand-selected bars, insider discounts, mobile payments &amp; free Uber rides home. The team needed highly qualified software engineers and was looking for appropriate vendors for IOS, Android and Backend development, along with QA Engineers and Software developers in Test.</p>',
+            slot: {
+              name: 'l-ordered',
+              props: {
+                list: 'qorum'
+              }
+            }
+          }
+        })
+      +s-footer()
+    +scripts()

@@ -1,15 +1,23 @@
 .a-arrow
+  position relative
   display flex
   align-items center
   color $text-color-primary
   text-decoration none
-  font-size $font-size-small-desktop
+  font-size $font-size-smaller-desktop
 
   .desktop &
     &:hover
       .a-arrow
         &__arrow
           transform translateX(10px)
+  &:before
+    position absolute
+    top -10px
+    right -10px
+    bottom -10px
+    left -10px
+    content ''
   &__text
     margin-right 10px
     white-space nowrap

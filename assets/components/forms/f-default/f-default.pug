@@ -1,37 +1,32 @@
 mixin f-default-input(o = {})
 
-    label.f-default__label(class=`${o.labelClassName || ''}`)
-        .f-default__label-text #{o.labelText}
-        if o.inputErrorText
-            .f-default__error #{o.inputErrorText}
-        if o.inputType === 'password'
-            .f-default__label-wrapper
-                input.f-default__field(
-                type=`${o.inputType}`,
-                placeholder=`${o.inputPlaceholder}`,
-                value=`${o.inputText || ''}`
-                autocomplete)
-        else
-            .f-default__label-wrapper
-                input.f-default__field(
-                type=`${o.inputType}`,
-                placeholder=`${o.inputPlaceholder}`,
-                value=`${o.inputText || ''}`)
-
-
-
+  label.f-default__label(class=`${o.labelClassName || ''}`)
+    .f-default__label-text #{o.labelText}
+    if o.inputErrorText
+      .f-default__error #{o.inputErrorText}
+    if o.inputType === 'password'
+      .f-default__label-wrapper
+        input.f-default__field(
+        type=`${o.inputType}`,
+        placeholder=`${o.inputPlaceholder}`,
+        value=`${o.inputText || ''}`,
+        autocomplete)
+    else
+      .f-default__label-wrapper
+        input.f-default__field(
+        type=`${o.inputType}`,
+        placeholder=`${o.inputPlaceholder}`,
+        value=`${o.inputText || ''}`)
 
 mixin f-default-select(o = {})
 
-    label.f-default__label(class=`${o.labelClassName || ''}`)
-        .f-default__label-text #{o.labelText}
-        if o.inputErrorText
-            .f-default__error #{o.inputErrorText}
-        .f-default__label-wrapper
-            multiselect(
-            v-model=`${o.selectValue}`,
-            placeholder=`${o.placeholder}`,
-            :options=`${o.selectOptions}`,
-            :searchable="false",
-            :allow-empty="false",
-            :close-on-select="true")
+  label.f-default__label(class=`${o.labelClassName || ''}`)
+    .f-default__label-text #{o.labelText}
+    if o.inputErrorText
+      .f-default__error #{o.inputErrorText}
+    .f-default__label-wrapper
+      multiselect(v-model=`${o.selectValue}`,
+      placeholder=`${o.placeholder}`,
+      :options=`${o.selectOptions}`,
+      :searchable='false',
+      :close-on-select='true')

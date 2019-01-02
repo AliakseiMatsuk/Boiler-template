@@ -1,0 +1,8 @@
+mixin l-emails(o = {})
+
+  +b.UL.l-emails
+    each email in lEmails.emails
+      +e.item
+        +e.P.title._light._xsmall._fwlight #{email.title}
+        //- ToDo: edit subject
+        +e.email(href=`mailto:${email.email}?subject=Qaprosoft%20${email.subject.replace(' ','%20')}`) #{email.email}

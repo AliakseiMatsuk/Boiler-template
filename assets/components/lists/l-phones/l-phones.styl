@@ -1,0 +1,18 @@
+.l-phones
+  &__item
+    &:not(:last-child)
+      margin-bottom 40px
+  &__phone
+    display inline-block
+    color $text-color-light
+    font-size $font-size-smaller-desktop
+    line-height $line-height-small
+
+    .desktop &
+      &:hover
+        text-decoration underline
+
++media-mobile()
+  .l-phones
+    &__phone
+      text-decoration underline

@@ -1,0 +1,6 @@
+mixin l-examples(o = {})
+
+  +b.UL.l-examples
+    each example in lExamples[o.examples]
+      +e.item
+        +b-example(example)

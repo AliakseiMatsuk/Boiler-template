@@ -1,0 +1,32 @@
+.b-services
+  &__row
+    display flex
+    justify-content space-between
+  &__col
+    fw(calc(50% - 50px))
+
+    /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
+    max-width 440px
+  &__item
+    &:not(:last-child)
+      margin-bottom 115px
+  &__title
+    margin-bottom 13px
+  &__subtitle
+    display flex
+    margin-bottom 30px
+
+    &-inner
+      display block
+      padding-right 10px
+    &-image
+      display flex
+      flex-shrink 0
+      align-items center
+
+      fw(35%)
+    &-icon
+      &.svg-icon-click
+        margin-top -12px
+      &._middle
+        vertical-align middle

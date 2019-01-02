@@ -1,22 +1,16 @@
 mixin btn(o = {})
+  - var isArrow = o.arrow ? '_arrow ' : '';
+  - var className = isArrow + o.className|| ''
 
-    if o.href && o.icon
-        a.btn(class=(o.className || ''), href=o.href, disabled=!!o.disabled, target=o.target)&attributes(o.attributes || {})
-            +svg({
-                name: o.icon,
-                className: 'btn__icon _primary'
-            })
-            span.btn__text #{o.title}
-    else if o.href
-        a.btn(class=(o.className || ''), href=o.href, disabled=!!o.disabled, target=o.target)&attributes(o.attributes || {})
-            span.btn__text #{o.title}
-    else if o.icon
-        button.btn(class=(o.className || ''), type=o.type === 'submit' ? false : (o.type || 'button'), disabled=!!o.disabled)&attributes(o.attributes || {})
-            +svg({
-                name: o.icon,
-                className: 'btn__icon _primary'
-            })
-            span.btn__text #{o.title}
-    else
-        button.btn(class=(o.className || ''), type=o.type === 'submit' ? false : (o.type || 'button'), disabled=!!o.disabled)&attributes(o.attributes || {})
-            span.btn__text #{o.title}
+  if o.href
+    a.btn(
+    class=`${className}`,
+    href=`${o.href}`,
+    target=o.target || false)&attributes(o.attributes || {})
+      span.btn__text #{o.title}
+  else
+    button.btn(
+    class=`${className}`,
+    type=o.type === 'submit' ? false : (o.type || 'button'),
+    disabled=!!o.disabled)&attributes(o.attributes || {})
+      span.btn__text #{o.title}

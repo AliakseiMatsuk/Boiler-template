@@ -1,99 +1,99 @@
 mixin l-buttons-group(o = {})
 
-    +b.UL.l-buttons-group
+  +b.UL.l-buttons-group
+    +e.item
+      +e.H4.title Primary button
+      +b.l-button-list
         +e.item
-            +e.H4.title Primary button
-            +b.l-button-list
-                +e.item
-                    +btn({
-                        title: 'Normal'
-                    })
-                +e.item
-                    +btn({
-                        title: 'Hover',
-                        className: '_hover'
-                    })
-                +e.item
-                    +btn({
-                        title: 'Disabled',
-                        disabled: true
-                    })
+          +btn({
+            title: 'Normal'
+          })
         +e.item
-            +e.H4.title Outline button
-            +b.l-button-list
-                +e.item
-                    +btn({
-                        title: 'Normal',
-                        className: '_outline'
-                    })
-                +e.item
-                    +btn({
-                        title: 'Hover',
-                        className: '_outline _hover'
-                    })
-                +e.item
-                    +btn({
-                        title: 'Disabled',
-                        className: '_outline',
-                        disabled: true
-                    })
+          +btn({
+            title: 'Hover',
+            className: '_hover'
+          })
         +e.item
-            +e.H4.title Secondary button
-            +b.l-button-list
-                +e.item
-                    +btn({
-                        title: 'Normal',
-                        className: '_rounded'
-                    })
-                +e.item
-                    +btn({
-                        title: 'Hover',
-                        className: '_hover _rounded'
-                    })
-                +e.item
-                    +btn({
-                        title: 'Disabled',
-                        className: '_rounded',
-                        disabled: true
-                    })
+          +btn({
+            title: 'Disabled',
+            disabled: true
+          })
+    +e.item
+      +e.H4.title Outline button
+      +b.l-button-list
         +e.item
-            +e.H4.title Text link
-            +b.l-button-list
-                +e.item
-                    +b-link({
-                        href: "#",
-                        text: 'Normal'
-                    })
-                +e.item
-                    +b-link({
-                        href: "#",
-                        text: 'Hover',
-                        className: '_hover'
-                    })
-                +e.item
-                    +b-link({
-                        href: "#",
-                        text: 'Disabled',
-                        className: "_disabled"
-                    })
+          +btn({
+            title: 'Normal',
+            className: '_outline'
+          })
         +e.item
-            +e.H4.title Light backgrounds
-            +b.l-button-list
-                +e.item
-                    +b-link({
-                        href: "#",
-                        text: 'Normal',
-                        className: "_dark"
-                    })
-                +e.item
-                    +b-link({
-                        href: "#",
-                        text: 'Hover',
-                        className: '_hover _dark'
-                    })
-                +e.item
-                    +b-link({
-                        href: "#",
-                        text: 'Disabled',
-                        className: "_dark _disabled"
-                    })
+          +btn({
+            title: 'Hover',
+            className: '_outline _hover'
+          })
+        +e.item
+          +btn({
+            title: 'Disabled',
+            className: '_outline',
+            disabled: true
+          })
+    +e.item
+      +e.H4.title Secondary button
+      +b.l-button-list
+        +e.item
+          +btn({
+            title: 'Normal',
+            className: '_rounded'
+          })
+        +e.item
+          +btn({
+            title: 'Hover',
+            className: '_hover _rounded'
+          })
+        +e.item
+          +btn({
+            title: 'Disabled',
+            className: '_rounded',
+            disabled: true
+          })
+    +e.item
+      +e.H4.title Text link
+      +b.l-button-list
+        +e.item
+          +b-link({
+            href: "#",
+            text: 'Normal'
+          })
+        +e.item
+          +b-link({
+            href: "#",
+            text: 'Hover',
+            className: '_hover'
+          })
+        +e.item
+          +b-link({
+            href: "#",
+            text: 'Disabled',
+            className: "_disabled"
+          })
+    +e.item
+      +e.H4.title Light backgrounds
+      +b.l-button-list
+        +e.item
+          +b-link({
+            href: "#",
+            text: 'Normal',
+            className: "_dark"
+          })
+        +e.item
+          +b-link({
+            href: "#",
+            text: 'Hover',
+            className: '_hover _dark'
+          })
+        +e.item
+          +b-link({
+            href: "#",
+            text: 'Disabled',
+            className: "_dark _disabled"
+          })

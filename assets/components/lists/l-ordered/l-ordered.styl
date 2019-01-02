@@ -5,12 +5,10 @@
 
   &__item
     position relative
-
-    fw(50%)
-
     padding-right 25px
     padding-left 60px
 
+    fw(50%)
     &:not(:last-child)
       margin-bottom 40px
     &:before
@@ -21,14 +19,12 @@
       content attr(data-index)
       font-weight $font-weight-semibold-text
       font-size $font-size-large-desktop
-      line-height $line-height-small
-  &__title
-    font-size $font-size-medium-desktop
-    line-height $line-height-default
+      line-height $line-height-xsmall
   &__description
     margin-top 13px
     font-size 1.3rem
-    line-height 24px
+    line-height 1.85
+
 +media-mobile()
   .l-ordered
     margin-right 0

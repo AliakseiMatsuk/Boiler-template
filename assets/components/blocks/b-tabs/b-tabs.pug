@@ -1,0 +1,20 @@
+mixin b-tabs(o = {})
+  - var _tabs = bTabs[o.tabs]
+  -
+    var _reducer = (type) => (acc, curr) => {
+      acc.push(curr[type])
+      return acc
+    }
+  - var isActive = (i) => o.active - 1 === i ? '_active' : '';
+  - var setClassNameForALongSting = (str) => str.length > 6 ? '_tiny' : str.length > 5 ? '_small' : '';
+
+  +b.b-tabs.js-bTabs
+    +e.inner
+      +e.UL.values
+        each value,i in _tabs.reduce(_reducer('value'),[])
+          +e.value.js-toggleTabContent(class=`${isActive(i)}`)
+            +e.P.value-inner._lighter._fwbold(class=`${setClassNameForALongSting(value)}`) #{value}
+      +e.UL.titles
+        each title,i  in _tabs.reduce(_reducer('title'),[])
+          +e.title
+            +e.BUTTON.title-btn.js-toggleTabBtn(class=`${isActive(i)}`) #{title}

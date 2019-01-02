@@ -1,0 +1,74 @@
+{
+  "navigation": [
+    {
+      "text": "Work",
+      "link": "./work.html"
+    },
+    {
+      "text": "Services",
+      "dropdown": [
+        {
+          "text": "Test Automation",
+          "link": "./services/test-automation.html"
+        },
+        {
+          "text": "VR / AR applications Development",
+          "link": "./services/vr-ar-application-development.html"
+        },
+        {
+          "text": "Testing & QA Management",
+          "link": "./services/testing-and-qa-management.html"
+        },
+        {
+          "text": "Data Science & AI Development",
+          "link": "./services/data-science-and-ai-development.html"
+        },
+        {
+          "text": "Security Audit",
+          "link": "./services/security-audit.html"
+        },
+        {
+          "text": "Mobile applications Development",
+          "link": "./services/mobile-applications-development.html"
+        }
+      ]
+    },
+    {
+      "text": "Products",
+      "dropdown": [
+        {
+          "text": "QPS Infrastructure",
+          "link": "https://www.qps-infra.io/",
+          "external": true
+        },
+        {
+          "text": "Carina Framework",
+          "link": "http://www.carina-core.io",
+          "external": true
+        },
+        {
+          "text": "Zafira Reporting Center",
+          "link": "http://qaprosoft.github.io/zafira/",
+          "external": true
+        },
+        {
+          "text": "MCloud Private Infrastructure",
+          "link": "https://www.mobiletesting.farm",
+          "external": true
+        }
+      ]
+    },
+    {
+      "text": "Team",
+      "link": "./about_us.html"
+    },
+    {
+      "text": "Blog",
+      "link": "https://blog.qaprosoft.com/"
+    },
+    {
+      "text": "Careers",
+      "link": "./careers.html"
+    }
+  ]
+}

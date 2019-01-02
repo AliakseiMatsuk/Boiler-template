@@ -1,75 +1,103 @@
-extends ../../common/pug/layout
+extends ../../common/pug/layout.pug
 
 block variables
-  - var pageInfo = {title: 'Test Automation', description: 'Test Automation'}
+  - var PAGEINFO = {title: 'Test Automation', description: 'Test Automation'}
 
 block content
   body.p-test-automation
-    .wrapper
-      //- +s-header()
-      +s-intro({
-        title: 'Test Automation',
-        subtitle: 'Optimize your testing costs by Automation. Let programs test programs: get speed, accuracy and platform coverage as high as you imagine.',
-        overlay: 'test-automation'
-      })
-      +s-default({
-        className: '_centered _lighter',
-        title: 'Automated testing',
-        slot: {
-          name: 'b-description',
-          props: {
-            image: {
-              src: 'photos/automated-testing',
-              alt: 'Automated testing'
-            },
-            title: 'Save budget by highly efficient cross-platform automation.',
-            content: 'Our expert-level SDET’s are the core contributors of opensource automation framework <a href="https://www.carina-core.io/" target="_blank" rel="noopener">Carina</a>, which is a perfect all-in-one solution for all layers of automation (WEB / Mobile / API / DB). It is built on the basis of Appium, Selenium and TestNG and provides great cost-saving features. 70% of code is reused between Android and IOS platform automated tests.'
-          }
-        }
-      })
-      +s-default({
-        className: '_centered _narrow _lighter',
-        title: 'Test Automation services we perform',
-        slot: {
-          name: 'l-ordered',
-          props: {
-            list: 'test-automation'
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'Our toolset',
-        slot: {
-          name: 'l-tools',
-          props: {
-            visibleTools: ['jenkins', 'java', 'maven', 'se', 'carina', 'testng', 'selenium', 'appium']
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'View our Work',
-        slot: {
-          name: 'l-projects',
-          props: {
-            visibleProjects: ['under-armour', 'landing-club', 'smule']
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'Top-level engineering expertise',
-        slot: {
-          name: 'b-cta',
-          props: {
-            text: 'Focus on long-term partnership lets us get to the very core of the business and assist our clients to create market-dominant products. Our strategy is based on the care, providing exceptional quality in cost-efficient way. Let us know what you are working on, and we guarantee to transform our excellence aspiration into your business value.',
-            actions: {
-              title: 'Get a Quote Today',
-              href: '/contact-us.html'
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: 'Test Automation',
+          subtitle: 'Optimize your testing costs by Automation. Let programs test programs: get speed, accuracy and platform coverage as high as you imagine.',
+          overlay: 'photos/test-automation'
+        })
+        +s-tests-executed()
+        +s-default({
+          className: '_lighter',
+          top: {
+            className: '_centered',
+            title: 'Automated testing'
+          },
+          inner: {
+            className: '_narrow',
+            slot: {
+              name: 'b-description',
+              props: {
+                image: {
+                  src: 'photos/automated-testing',
+                  alt: 'Automated testing'
+                },
+                title: 'Save budget by highly efficient cross-platform automation.',
+                content: 'Our expert-level SDET’s are the core contributors of opensource automation framework <a href="https://www.carina-core.io/" target="_blank" rel="noopener">Carina</a>, which is a perfect all-in-one solution for all layers of automation (WEB / Mobile / API / DB). It is built on the basis of Appium, Selenium and TestNG and provides great cost-saving features. 70% of code is reused between Android and IOS platform automated tests.'
+              }
             }
           }
-        }
-      })
-      //- +s-footer()
+        })
+        +s-default({
+          className: '_lighter',
+          top: {
+            className: '_centered',
+            title: 'Test Automation services we perform'
+          },
+          inner: {
+            className: '_narrow',
+            slot: {
+              name: 'l-ordered',
+              props: {
+                list: 'test-automation'
+              }
+            }
+          }
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'Our toolset'
+          },
+          inner: {
+            className: '_narrow',
+            slot: {
+              name: 'l-tools',
+              props: {
+                visibleTools: ['jenkins', 'java', 'maven', 'se', 'carina', 'testng', 'selenium', 'appium']
+              }
+            }
+          }
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'View our Work'
+          },
+          inner: {
+            slot: {
+              name: 'l-projects',
+              props: {
+                visibleProjects: ['under-armour', 'landing-club', 'smule']
+              }
+            }
+          }
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'Top-level engineering expertise',
+          },
+          inner: {
+            slot: {
+              name: 'b-cta',
+              props: {
+                text: 'Focus on long-term partnership lets us get to the very core of the business and assist our clients to create market-dominant products. Our strategy is based on the care, providing exceptional quality in cost-efficient way. Let us know what you are working on, and we guarantee to transform our excellence aspiration into your business value.',
+                actions: {
+                  title: 'Get a Quote Today',
+                  href: '/contact-us.html',
+                  arrow: true
+                }
+              }
+            }
+          }
+        })
+      +s-footer()
     +scripts()

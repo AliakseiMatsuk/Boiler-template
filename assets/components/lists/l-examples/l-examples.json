@@ -1,0 +1,16 @@
+{
+  "tripointlab": [
+    {
+      "image": "kiosk",
+      "description": "Kiosk application – is exhibited At The Tech Museum of Innovation with a 10-year contract."
+    },
+    {
+      "image": "eye",
+      "description": "AR application for students so they can preview all the elements available for the lecture."
+    },
+    {
+      "image": "bones",
+      "description": "Full 3D anatomy models for students teaching"
+    }
+  ]
+}

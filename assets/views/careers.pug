@@ -1,0 +1,29 @@
+extends ../common/pug/layout.pug
+
+block variables
+  - var PAGEINFO = {title: '', description: ''}
+
+block content
+  body.p-careers.qap
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: 'Boost your career with us',
+          subtitle: 'We\'re always looking for the talents and professionals to join',
+          overlay: 'photos/careers'
+        })
+        +s-default({
+          className: 's-vacancies _lighter',
+          top: {
+            className: 's-vacancies__top',
+            title: 'Current vacancies'
+          },
+          inner: {
+            slot: {
+              name: 'l-vacancies'
+            }
+          }
+        })
+      +s-footer()
+    +scripts()

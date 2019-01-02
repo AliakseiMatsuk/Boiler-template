@@ -17,11 +17,11 @@ module.exports = () => {
         require('postcss-reporter')()
       ]))
       .pipe($.gp.if($.config.minify, $.cleanCSS({ debug: true }, (details) => {
-        console.log('\x1b[31m', `${details.name}: Original - ${(details.stats.originalSize / 1e3).toFixed(1)} kb`);
-        console.log('\x1b[32m', `${details.name}: Min - ${(details.stats.minifiedSize / 1e3).toFixed(1)} kb`);
+        $.fancyLog($.colors.bold.red(`${details.name}: Original - ${(details.stats.originalSize / 1e3).toFixed(1)} kb`));
+        $.fancyLog($.colors.bold.green(`${details.name}: Min - ${(details.stats.minifiedSize / 1e3).toFixed(1)} kb`));
       })))
       .pipe($.gp.sourcemaps.write('.'))
       .pipe($.gulp.dest($.config.public.css))
-      .pipe($.gp.if($.config.reload, $.browserSync.stream()));
+      .pipe($.gp.if($.config.reload, $.browserSync.stream({ once: true })));
   });
 };

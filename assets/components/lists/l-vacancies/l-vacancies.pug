@@ -1,0 +1,29 @@
+mixin l-vacancies(o = {})
+
+  +b.UL.l-vacancies
+    each vacancy in lVacancies.vacancies
+      +e.vacancy
+        +e.BUTTON.preview.js-vacancy
+          +e.preview-inner
+            +e.H3.title #{vacancy.title}
+            +e.close
+              span.b-close
+            +e.arrow
+              +a-arrow()
+              //-
+                .arrow-link
+                  span.arrow-link__arrow
+        +e.inner
+          +e.P.description !{vacancy.inner.description}
+          +e.details
+            each detail in vacancy.inner.details
+              +e.details-group
+                +e.H4.details-title #{detail.title}:
+                +e.UL.details-list
+                  each item in detail.list
+                    +e.details-list-item
+                      p !{item}
+          +e.apply
+            a.border-link.no-hover._centered(href=`/careers-apply.html?v=${vacancy.title}`)
+              span.border-link__text Apply
+              span.border-link__arrow

@@ -1,6 +1,6 @@
 mixin l-projects(o = {})
 
-  +b.UL.l-projects(role="list")
+  +b.UL.l-projects
     each project, key in lProjects.projects
       if o.visibleProjects.includes(key)
         +e.project

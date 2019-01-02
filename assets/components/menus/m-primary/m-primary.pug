@@ -1,0 +1,24 @@
+mixin m-primary(o = {})
+
+  +b.NAV.m-primary
+    +e.UL.list
+      each item in mPrimary.navigation
+        +e.item(class=item.dropdown ? '_dropdown' : false)
+          if item.link
+            +e.link(href=`${item.link}`) #{item.text}
+          if item.dropdown
+            +e.SPAN.link #{item.text}
+            +e.UL.dropdown
+              each link in item.dropdown
+                +e.dropdown-item
+                  if link.external
+                    +e.dropdown-link(href=`${link.link}` target='_blank' rel='noopener')
+                      +e.dropdown-link-text #{link.text}
+                      +svg({
+                        name: 'arrow-link-menu',
+                        title: link.text,
+                        className: 'm-primary__dropdown-link-icon'
+                      })
+                  else
+                    +e.dropdown-link(href=`${link.link}`)
+                      +e.dropdown-link-text #{link.text}

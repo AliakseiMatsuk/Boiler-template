@@ -1,0 +1,65 @@
+extends ../../common/pug/layout.pug
+
+block variables
+  - var PAGEINFO = {title: '5 Quality solutions for APPs’ market dominance', description: '5 Quality solutions for APPs’ market dominance'}
+
+block content
+  body.p-under-armour
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: '5 Quality solutions for APPs’ market dominance',
+          overlay: 'projects/1'
+        })
+        +s-default({
+          className: '_narrow',
+          top: {
+            title: 'Situation preview'
+          },
+          inner: {
+            data:
+            '<p>Under Armour is number 6 in The World’s Most Innovative Companies rating. It delivers sports clothing, athletic shoes &amp; accessories and digital products for fitness area. It was crucial for the company to find a reliable partner to build a sustainable Quality Assurance for all the Under Armour products (MyFitnessPal, MapMyRun, UA Record, Endomondo, UA Mobile Shop, UA Connected Devices) that millions of people can smoothly use it.</p>' +
+            '<p>Qaprosoft was chosen to implement complete QA department solution: QA Process for short release iterations, scaling local team with manual testers, building Automated QA for Mobile, WEB, API and Connected Devices layers. As of current time, QA department contains 35 Qaprosoft engineers helping UA team to build the success of the apps every day.</p>'
+          }
+        })
+        +s-default({
+          className: '_narrow',
+          top: {
+            title: 'Result in figures'
+          },
+          inner: {
+            slot: {
+              name: 'b-tabs',
+              props: {
+                tabs: 'under-armour',
+                active: 2
+              }
+            }
+          }
+        })
+        +s-default({
+          className: '_narrow',
+          top: {
+            title: 'Clients benefit'
+          },
+          inner: {
+            data: '<p>Qaprosoft takes full responsibility for the final quality of all UA apps: each release comes with our formal QA Sign off. All the tests are transparent and accounted in TestRail test management platform: UA management knows what, how and when is tested. Thanks to Continuous QA approach and running CI we uncover all the issues early in the development stage, which dramatically reduces costs of fixing the defect.</p>' +
+            '<p>Close co-operation with UA developers has resulted in creation of virtual team — we work as a single unit participating in all the scrum activities, quickly reacting to the challenges and effectively achieving the quality goals.</p>'
+          }
+        })
+        +s-default({
+          top: {
+            title: 'View our Work'
+          },
+          inner: {
+            slot: {
+              name: 'b-videos',
+              props: {
+                videos: 'under-armour'
+              }
+            }
+          }
+        })
+      +s-footer()
+    +scripts()

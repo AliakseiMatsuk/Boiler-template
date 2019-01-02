@@ -1,0 +1,10 @@
+mixin l-socials(o = {})
+
+  +b.UL.l-socials
+    each social in lSocials.socials
+      +e.social
+        +e.link(href=`${social.link}` target='_blank' rel='noopener')
+          +svg({
+            name: social.icon,
+            className: 'l-socials__icon'
+          })

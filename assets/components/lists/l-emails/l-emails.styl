@@ -1,0 +1,17 @@
+.l-emails
+  &__item
+    &:not(:last-child)
+      margin-bottom 20px
+  &__email
+    color $text-color-light
+    font-size $font-size-xxsmall-desktop
+    line-height $line-height-xmedium
+
+    .desktop &
+      &:hover
+        text-decoration underline
+
++media-mobile()
+  .l-emails
+    &__email
+      text-decoration underline

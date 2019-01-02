@@ -5,32 +5,34 @@ let env = (process.env.NODE_ENV === 'heroku')
   : require('gulp-env')({ file: '.env.json' });
 
 global.$ = {
-    package: require('./package.json'),
-    config: require('./gulp/config'),
-    gulp: require('gulp'),
-    del: require('del'),
-    buf: require('vinyl-buffer'),
-    merge: require('merge-stream'),
-    mergeJSON: require('gulp-merge-json'),
-    browserSync: require('browser-sync').create(),
-    gp: require('gulp-load-plugins')(),
-    autoprefixer: require('gulp-autoprefixer'),
-    cleanCSS: require('gulp-clean-css'),
-    fs: require('fs'),
-    stylint: require('gulp-stylint'),
-    svgSymbols: require('gulp-svg-symbols'),
-    emitty: require('emitty').setup('assets', 'pug'),
-    gulpWebpack: require('webpack-stream'),
-    webpack: require('webpack'),
-    webpackStream: require('webpack-stream'),
-    path: require('path'),
-    pathPlugins: {
-        task: require('./gulp/paths.js')
-    }
+  package: require('./package.json'),
+  config: require('./gulp/config'),
+  gulp: require('gulp'),
+  del: require('del'),
+  buf: require('vinyl-buffer'),
+  merge: require('merge-stream'),
+  mergeJSON: require('gulp-merge-json'),
+  browserSync: require('browser-sync').create(),
+  gp: require('gulp-load-plugins')(),
+  autoprefixer: require('gulp-autoprefixer'),
+  cleanCSS: require('gulp-clean-css'),
+  fs: require('fs'),
+  stylint: require('gulp-stylint'),
+  fancyLog : require('fancy-log'),
+  colors : require('ansi-colors'),
+  svgSymbols: require('gulp-svg-symbols'),
+  emitty: require('emitty').setup('assets', 'pug'),
+  gulpWebpack: require('webpack-stream'),
+  webpack: require('webpack'),
+  webpackStream: require('webpack-stream'),
+  path: require('path'),
+  pathPlugins: {
+    task: require('./gulp/paths.js')
+  }
 };
 
 $.pathPlugins.task.forEach(function (taskPath) {
-    require(taskPath)();
+  require(taskPath)();
 });
 
 $.gulp.task('build', $.gulp.series(
@@ -53,6 +55,7 @@ $.gulp.task('build', $.gulp.series(
   ),
   $.gulp.parallel(
     'lint:stylus',
+    'lint:pug',
     'lint:scripts'
   )
 ));

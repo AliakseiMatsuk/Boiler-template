@@ -165,5 +165,101 @@
       "title": "IoT integration and fitness wearable devices",
       "index": "4"
     }
+  ],
+  "r-hotel": [
+    {
+      "title": "Create conversations on the fly",
+      "index": "1"
+    },
+    {
+      "title": "Suggest best offer for a customer based on intent / behavior analysis and available data from social networks (profile data, comments style, images)",
+      "index": "4"
+    },
+    {
+      "title": "Let HMS administrator interrupt or manage the bot dynamically",
+      "index": "2"
+    },
+    {
+      "title": "Log all messages in database",
+      "index": "5"
+    },
+    {
+      "title": "Provide real-time analytics",
+      "index": "3"
+    },
+    {
+      "title": "Have deep integration with",
+      "index": "6"
+    }
+  ],
+  "car-on-fly": [
+    {
+      "title": "Automatic dispatch system with range integration",
+      "index": "1"
+    },
+    {
+      "title": "Fully customizable mobile frontend (native IOS / Android)",
+      "index": "4"
+    },
+    {
+      "title": "Modular microservice backend with great scaling possibilities",
+      "index": "2"
+    },
+    {
+      "title": "Admin tool with analytics and advance service management",
+      "index": "5"
+    },
+    {
+      "title": "WEB frontend for taxi dispatch operator",
+      "index": "3"
+    }
+  ],
+  "tripointlab": [
+    {
+      "title": "VR clients for desktop (Oculus) and mobile (IOS, Android)",
+      "index": "1"
+    },
+    {
+      "title": "Mobile AR clients (IOS, Android)",
+      "index": "4"
+    },
+    {
+      "title": "Solution for exhibitions and museums (3d desktop / VR desktop)",
+      "index": "2"
+    },
+    {
+      "title": "Complex backend",
+      "index": "5"
+    },
+    {
+      "title": "Provide real-time analytics",
+      "index": "3"
+    },
+    {
+      "title": "Solution for recognizing activities taken in surgery practice room",
+      "index": "6"
+    }
+  ],
+  "qorum": [
+    {
+      "title": "Mobile clients apps for those who want to have a drink (native IOS / Android)",
+      "index": "1"
+    },
+    {
+      "title": "Mobile client apps for barmen who prepare the orders while the customer is driving to the bar",
+      "index": "4"
+    },
+    {
+      "title": "Backend serving order logic and providing integration with RMS",
+      "index": "2"
+    },
+    {
+      "title": "Admin tool with analytics and advance service management",
+      "index": "5"
+    },
+    {
+      "title": "Deep integration with Uber, allowing user to order a car and track drivers en route inside Qorum app",
+      "index": "3"
+    }
   ]
 }

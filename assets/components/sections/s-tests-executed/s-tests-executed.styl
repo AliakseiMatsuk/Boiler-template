@@ -1,0 +1,28 @@
+.s-tests-executed
+  padding 150px 0
+  opacity 1
+
+  &__inner
+    text-align center
+  &__counter
+    position relative
+    display inline-block
+    margin-bottom -15px
+    font-size 12rem
+
+    tro()
+    &._hide
+      opacity 0
+    &._blink
+      animation blinkAnimation .5s linear
+    &:after
+      position absolute
+      top 16px
+      right -23px
+      display block
+      width 14px
+      height 14px
+      border-radius 50%
+      background #FF0000 // @stylint ignore
+      box-shadow 0 0 0 4px rgba(255, 0, 0, .2)
+      content ''

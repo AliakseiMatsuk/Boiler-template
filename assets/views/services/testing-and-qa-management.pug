@@ -1,100 +1,134 @@
-extends ../../common/pug/layout
+extends ../../common/pug/layout.pug
 
 block variables
-  - var pageInfo = {title: 'Testing & QA management', description: 'Testing & QA management'}
+  - var PAGEINFO = {title: 'Testing & QA management', description: 'Testing & QA management'}
 
 block content
-  body.p-vr-ar-application-development
-    .wrapper
-      //- +s-header()
-      +s-intro({
-        title: 'Testing & QA management',
-        subtitle: 'Originating from QA company Qaprosoft is an expert-level QA agent for any of your challenges. We offer high standards for quality inside your project in any way it is comfortable for you. While you build your product, our team works to make it perfect.',
-        overlay: 'testing-qa-management'
-      })
-      +s-default({
-        className: '_centered',
-        title: 'Manual QA',
-        slot: {
-          name: 'b-description',
-          props: {
-            image: {
-              src: 'photos/manual-qa',
-              alt: 'Manual QA'
-            },
-            title: 'Integrate your team with top-level QA Engineers.',
-            content: 'Within years of co-operation we applied our competencies to build sustainable quality for the applications with more than 10 million of daily active users load. Our engineers are responsible for the quality throughout complete release cycle: from initial test planning till QA department sign off.'
-          }
-        }
-      })
-      +s-default({
-        className: '_centered _narrow',
-        title: 'Quality Assurance services we perform',
-        slot: {
-          name: 'l-ordered',
-          props: {
-            list: 'quality-assurance'
-          }
-        }
-      })
-      +s-default({
-        className: '_centered _lighter',
-        title: 'QA Process Audit and Improvement',
-        slot: {
-          name: 'b-description',
-          props: {
-            image: {
-              src: 'photos/qa-process-audit',
-              alt: 'QA Process Audit and Improvement'
-            },
-            title: 'We’re open to share the expertise we’ve built for the years of QA consulting.',
-            content: 'If you are just building your QA department from scratch, we can provide you with proven ways to organize it in effective way ideally fitted for your SDLC. Also we can perform audit for cost-effect optimization and existing process improvements.'
-          }
-        }
-      })
-      +s-default({
-        className: '_centered _narrow _lighter',
-        title: 'QA Management services we perform',
-        slot: {
-          name: 'l-ordered',
-          props: {
-            list: 'qa-management'
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'Our toolset',
-        slot: {
-          name: 'l-tools',
-          props: {
-            visibleTools: ['fiddler', 'android-studio', 'xcode', 'test-rails', 'postman', 'soap-ui', 'tizen']
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'View our Work',
-        slot: {
-          name: 'l-projects',
-          props: {
-            visibleProjects: ['under-armour', 'landing-club', 'smule']
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'Top-level engineering expertise',
-        slot: {
-          name: 'b-cta',
-          props: {
-            text: 'Focus on long-term partnership lets us get to the very core of the business and assist our clients to create market-dominant products. Our strategy is based on the care, providing exceptional quality in cost-efficient way. Let us know what you are working on, and we guarantee to transform our excellence aspiration into your business value.',
-            actions: {
-              title: 'Get a Quote Today',
-              href: '/contact-us.html'
+  body.p-testing-qa-management
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: 'Testing & QA management',
+          subtitle: 'Originating from QA company Qaprosoft is an expert-level QA agent for any of your challenges. We offer high standards for quality inside your project in any way it is comfortable for you. While you build your product, our team works to make it perfect.',
+          overlay: 'photos/testing-qa-management'
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'Manual QA'
+          },
+          inner: {
+            slot: {
+              name: 'b-description',
+              props: {
+                image: {
+                  src: 'photos/manual-qa',
+                  alt: 'Manual QA'
+                },
+                title: 'Integrate your team with top-level QA Engineers.',
+                content: 'Within years of co-operation we applied our competencies to build sustainable quality for the applications with more than 10 million of daily active users load. Our engineers are responsible for the quality throughout complete release cycle: from initial test planning till QA department sign off.'
+              }
             }
           }
-        }
-      })
-      //- +s-footer()
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'Quality Assurance services we perform'
+          },
+          inner: {
+            className: '_narrow',
+            slot: {
+              name: 'l-ordered',
+              props: {
+                list: 'quality-assurance'
+              }
+            }
+          }
+        })
+        +s-default({
+          className: '_lighter',
+          top: {
+            className: '_centered',
+            title: 'QA Process Audit and Improvement'
+          },
+          inner: {
+            slot: {
+              name: 'b-description',
+              props: {
+                image: {
+                  src: 'photos/qa-process-audit',
+                  alt: 'QA Process Audit and Improvement'
+                },
+                title: 'We’re open to share the expertise we’ve built for the years of QA consulting.',
+                content: 'If you are just building your QA department from scratch, we can provide you with proven ways to organize it in effective way ideally fitted for your SDLC. Also we can perform audit for cost-effect optimization and existing process improvements.'
+              }
+            }
+          }
+        })
+        +s-default({
+          className: '_lighter',
+          top: {
+            className: '_centered',
+            title: 'QA Management services we perform'
+          },
+          inner: {
+            className: '_narrow',
+            slot: {
+              name: 'l-ordered',
+              props: {
+                list: 'qa-management'
+              }
+            }
+          }
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'Our toolset'
+          },
+          inner: {
+            slot: {
+              name: 'l-tools',
+              props: {
+                visibleTools: ['fiddler', 'android-studio', 'xcode', 'test-rails', 'postman', 'soap-ui', 'tizen']
+              }
+            }
+          }
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'View our Work'
+          },
+          inner: {
+            slot: {
+              name: 'l-projects',
+              props: {
+                visibleProjects: ['under-armour', 'landing-club', 'smule']
+              }
+            }
+          }
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'Top-level engineering expertise'
+          },
+          inner: {
+            slot: {
+              name: 'b-cta',
+              props: {
+                text: 'Focus on long-term partnership lets us get to the very core of the business and assist our clients to create market-dominant products. Our strategy is based on the care, providing exceptional quality in cost-efficient way. Let us know what you are working on, and we guarantee to transform our excellence aspiration into your business value.',
+                actions: {
+                  title: 'Get a Quote Today',
+                  href: '/contact-us.html',
+                  arrow: true
+                }
+              }
+            }
+          }
+        })
+      +s-footer()
     +scripts()

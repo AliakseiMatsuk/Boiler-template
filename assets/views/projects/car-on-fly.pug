@@ -1,0 +1,40 @@
+extends ../../common/pug/layout.pug
+
+block variables
+  - var PAGEINFO = {title: 'Shared economy solutions for transport software company', description: 'Shared economy solutions for transport software company'}
+
+block content
+  body.p-car-on-fly
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: 'Shared economy solutions for transport software company',
+          overlay: 'projects/2'
+        })
+        +s-default({
+          className: '_lighter _narrow',
+          top: {
+            title: 'Result'
+          },
+          inner: {
+            data: '<p>The resulting solution provided by our team consists of:</p>',
+            slot: {
+              name: 'l-ordered',
+              props: {
+                list: 'car-on-fly'
+              }
+            }
+          }
+        })
+        +s-default({
+          className: '_narrow',
+          top: {
+            title: 'Outcome'
+          },
+          inner: {
+            data: '<p>The final outcome of our work is a platform, which is easy to scale to other business types — delivery service, cleaning, road aid, which opened other markets for our client to enter.</p>'
+          }
+        })
+      +s-footer()
+    +scripts()

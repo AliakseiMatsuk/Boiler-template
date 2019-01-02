@@ -1,10 +1,11 @@
 'use strict';
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+
 module.exports = () => {
   $.gulp.task('scripts', () => {
     return $.gulp.src($.config.assets.js)
       .pipe($.webpackStream({
-        mode: process.env.NODE_ENV === 'heroku' ? 'production' : 'development',
+        mode: $.config.minify ? 'production' : 'development',
         output: {
           filename: 'app.js',
         },

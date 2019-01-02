@@ -1,0 +1,43 @@
+extends ../../common/pug/layout.pug
+
+block variables
+  - var PAGEINFO = {title: 'Complete engineering solutions for the entire QA', description: 'Complete engineering solutions for the entire QA'}
+
+block content
+  body.p-smule
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: 'Complete engineering solutions for the entire QA',
+          overlay: 'projects/7'
+        })
+        +s-default({
+          top: {
+            title: 'Company preview'
+          },
+          inner: {
+            data:
+            '<p>Smule is entered into the ranking “America\'s Most Promising Companies”. The company specializes in developing social music-making applications for iOS, Android and AppleTV OS. Smule was looking for a reliable partner to help the company achieve the top quality standards.</p>' +
+            '<p>Qaprosoft was chosen for deep QA focus.</p>'
+          }
+        })
+        +s-default({
+          top: {
+            title: 'Scope of work'
+          },
+          inner: {
+            data:
+            '<p>We test Sing!Karaoke, Magic Piano, AutoRap, Guitar, T-Pain, Cinebeat and Ocarina apps with keen detail and accuracy, including regression, localization, API and data analytics testing, test design and automation.</p>'
+          }
+        })
+        +s-default({
+          top: {
+            title: 'Client Benefit'
+          },
+          inner: {
+            data: '<p>For 6 years our engineers assured quality throughout complete release cycle: from initial test planning till QA department sign off. We’re looking forward to long-term co-operation and proud to be the part of the Smule success story.</p>'
+          }
+        })
+      +s-footer()
+    +scripts()

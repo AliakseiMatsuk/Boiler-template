@@ -1,95 +1,128 @@
-extends ../../common/pug/layout
+extends ../../common/pug/layout.pug
 
 block variables
-  - var pageInfo = {title: 'VR / AR applications Development', description: 'VR / AR applications Development'}
+  - var PAGEINFO = {title: 'VR / AR applications Development', description: 'VR / AR applications Development'}
 
 block content
   body.p-vr-ar-application-development
-    .wrapper
-      //- +s-header()
-      +s-intro({
-        title: 'VR / AR applications Development',
-        subtitle: 'Imagine your virtual presence at shops, concerts, fashion shows, doctor training, virtual surgery. Our VR / AR team can make it happen.',
-        overlay: 'vr-ar-application-development'
-      })
-      +s-default({
-        className: '_centered',
-        title: 'Virtual Reality & Augmented Reality applications',
-        slot: {
-          name: 'b-description',
-          props: {
-            image: {
-              src: 'photos/vr-description',
-              alt: 'Virtual Reality & Augmented Reality applications'
-            },
-            content: 'Strong team working with Unity3d and UnrealEngine enables to deliver AR and VR apps working in any environment, from IOS (ARKit) and Android (ARCore) to desktop applications for Oculus and HTC Vive helmets'
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'VR/AR apps for various industries',
-        slot: {
-          name: 'l-cards',
-          props: {
-            cards: 'vr-ar-application-development'
-          }
-        }
-      })
-      +s-default({
-        className: '_centered _narrow',
-        title: 'Our core development team',
-        slot: {
-          name: 'l-ordered',
-          props: {
-            list: 'vr-application'
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'We gained solid experience in the following domains',
-        slot: {
-          name: 'l-info',
-          props: {
-            className: '_bordered',
-            infos: 'vr-ar-application-development'
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'Our toolkit',
-        slot: {
-          name: 'l-tools',
-          props: {
-            visibleTools: ['unity', 'vuforia', 'arcore', 'microsoft-hololens', 'opencv', 'photon', 'oculus-vr', 'apple-ar-kit']
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'View our Work',
-        slot: {
-          name: 'l-projects',
-          props: {
-            visibleProjects: ['tripointlab']
-          }
-        }
-      })
-      +s-default({
-        className: '_centered',
-        title: 'Top-level engineering expertise',
-        slot: {
-          name: 'b-cta',
-          props: {
-            text: 'Focus on long-term partnership lets us get to the very core of the business and assist our clients to create market-dominant products. Our strategy is based on the care, providing exceptional quality in cost-efficient way. Let us know what you are working on, and we guarantee to transform our excellence aspiration into your business value.',
-            actions: {
-              title: 'Get a Quote Today',
-              href: '/contact-us.html'
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: 'VR / AR applications Development',
+          subtitle: 'Imagine your virtual presence at shops, concerts, fashion shows, doctor training, virtual surgery. Our VR / AR team can make it happen.',
+          overlay: 'photos/vr-ar-application-development'
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'Virtual Reality & Augmented Reality applications'
+          },
+          inner: {
+            className: '_narrow',
+            slot: {
+              name: 'b-description',
+              props: {
+                image: {
+                  src: 'photos/vr-description',
+                  alt: 'Virtual Reality & Augmented Reality applications'
+                },
+                content: 'Strong team working with Unity3d and UnrealEngine enables to deliver AR and VR apps working in any environment, from IOS (ARKit) and Android (ARCore) to desktop applications for Oculus and HTC Vive helmets'
+              }
             }
           }
-        }
-      })
-      //- +s-footer()
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'VR/AR apps for various industries'
+          },
+          inner: {
+            slot: {
+              name: 'l-cards',
+              props: {
+                cards: 'vr-ar-application-development'
+              }
+            }
+          }
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'Our core development team',
+          },
+          inner: {
+            className: '_narrow',
+            slot: {
+              name: 'l-ordered',
+              props: {
+                list: 'vr-application'
+              }
+            }
+          }
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'We gained solid experience in the following domains'
+          },
+          inner: {
+            slot: {
+              name: 'l-info',
+              props: {
+                className: '_bordered',
+                infos: 'vr-ar-application-development'
+              }
+            }
+          }
+        })
+
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'Our toolkit'
+          },
+          inner: {
+            slot: {
+              name: 'l-tools',
+              props: {
+                visibleTools: ['unity', 'vuforia', 'arcore', 'microsoft-hololens', 'opencv', 'photon', 'oculus-vr', 'apple-ar-kit']
+              }
+            }
+          }
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'View our Work'
+          },
+          inner: {
+            slot: {
+              name: 'l-projects',
+              props: {
+                visibleProjects: ['tripointlab']
+              }
+            }
+          }
+        })
+        +s-default({
+          top: {
+            className: '_centered',
+            title: 'Top-level engineering expertise'
+          },
+          inner: {
+            slot: {
+              name: 'b-cta',
+              props: {
+                text: 'Focus on long-term partnership lets us get to the very core of the business and assist our clients to create market-dominant products. Our strategy is based on the care, providing exceptional quality in cost-efficient way. Let us know what you are working on, and we guarantee to transform our excellence aspiration into your business value.',
+                actions: {
+                  title: 'Get a Quote Today',
+                  href: '/contact-us.html',
+                  arrow: true
+                }
+              }
+            }
+          }
+        })
+      +s-footer()
     +scripts()

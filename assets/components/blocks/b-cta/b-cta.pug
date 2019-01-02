@@ -1,7 +1,7 @@
 mixin b-cta(o = {})
 
   +b.b-cta(class=`${o.className || ''}`)
-    +e.text #{o.text}
+    +e.P.text._darker._big._centered #{o.text}
     if o.actions
       +e.actions
         +btn(o.actions)

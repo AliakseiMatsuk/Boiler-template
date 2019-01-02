@@ -2,4 +2,32 @@ mixin s-footer(o = {})
 
   +b.FOOTER.s-footer
     .container
-      +e.container
+      +e.inner
+        +e.row
+          +e.col._columned
+            +svg({
+              name: 'logo-qaprosoft-dark',
+              title: 'Quality assurance',
+              className: 's-footer__logo _fill-darker'
+            })
+            +e.copyright
+              +e.copyright-link(href='./copyright.html') Privacy Policy
+              p._darker._xsmall &copy; 2009-2018 Qaprosoft
+              p._darker._xsmall All Rights Reserved
+          +e.col
+            +e.H5.title._darker._uppercase._fwsemibold Locations
+            +e.addresses
+              +e.addresses-item
+                +l-addresses(lAddresses.primary)
+              +e.addresses-item
+                +l-addresses(lAddresses.secondary)
+          +e.col._columned
+            +e.H5.title._darker._uppercase._fwsemibold TALK TO US
+            +e.phones
+              +l-phones()
+            +e.socials
+              +l-socials()
+          +e.col
+            +e.H5.title._darker._uppercase._fwsemibold CONNECT US
+            +e.emails
+              +l-emails()

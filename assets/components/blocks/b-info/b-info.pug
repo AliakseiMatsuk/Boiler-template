@@ -1,10 +1,12 @@
 mixin b-info(o = {})
 
-  +b.FIGURE.b-info
-    +e.FIGCAPTION.content
+  +b.b-info
+    +e.FIGURE.content
       +e.icon
         +svg({
           name: o.icon,
-          title: o.title
+          title: o.title,
+          className: '_fill-secondary'
         })
-      +e.title #{o.title}
+      +e.FIGCAPTION.title
+        p._darker._centered #{o.title}

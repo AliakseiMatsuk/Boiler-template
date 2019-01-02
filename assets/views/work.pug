@@ -1,31 +1,41 @@
-extends ../common/pug/layout
+extends ../common/pug/layout.pug
 
 block variables
-  - var pageInfo = {title: 'Highest quality under any conditions', description: 'Highest quality under any conditions'}
+  - var PAGEINFO = {title: 'Highest quality under any conditions', description: 'Highest quality under any conditions'}
 
 block content
   body.p-work
-    .wrapper
-      //- +s-header()
-      +s-intro({
-        title: 'Highest quality under any conditions',
-        overlay: 'works'
-      })
-      +s-projects()
-      +s-default({
-        title: 'Partners for many years',
-        slot: {
-          name: 'l-partners',
-          props: {
-            className: '_bordered'
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: 'Highest quality under any conditions',
+          overlay: 'photos/works'
+        })
+        +s-projects()
+        +s-default({
+          top: {
+            title: 'Partners for many years'
+          },
+          inner: {
+            className: '_narrow',
+            slot: {
+              name: 'l-partners',
+              props: {
+                className: '_bordered'
+              }
+            }
           }
-        }
-      })
-      +s-default({
-        title: 'Our products',
-        slot: {
-          name: 'l-products'
-        }
-      })
-      //- +s-footer()
+        })
+        +s-default({
+          top: {
+            title: 'Our products'
+          },
+          inner: {
+            slot: {
+              name: 'l-products'
+            }
+          }
+        })
+      +s-footer()
     +scripts()

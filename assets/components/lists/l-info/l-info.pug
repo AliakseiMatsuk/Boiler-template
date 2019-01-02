@@ -1,6 +1,6 @@
 mixin l-info(o = {})
 
-  +b.UL.l-info(class=`${o.className || ''}`, role='list')
+  +b.UL.l-info(class=`${o.className || ''}`)
     each info in lInfo[o.infos]
       +e.info
         +b-info(info)

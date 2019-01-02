@@ -1,22 +1,22 @@
 defaultFontFamily()
   font-family $default-font-family, Arial, Helvetica, sans-serif
 
-secondaryFontFamily()
-  font-family $secondary-font-family, Arial, Helvetica, sans-serif
-
 setFontColor()
   &._primary
     color $text-color-primary
+  &._secondary
+    color $text-color-secondary
   &._light
     color $text-color-light
   &._lighter
     color $text-color-lighter
+  &._darker
+    color $text-color-darker
 
 /**
  * Font family
  */
 $default-font-family = 'Gibson'
-$secondary-font-family = 'Montserrat'
 
 /**
  * Wrapper size
@@ -28,7 +28,7 @@ $wrapper-min-width = 32rem
  * Colors
  */
 // Basic
-$black = #000000;
+$black = #1b1b1c;
 $cod-gray = #191919;
 $tundora = #4a4a4a;
 $boulder = #757575;
@@ -53,27 +53,33 @@ $default-link-color = $black
 $base = $black
 $dark = $cod-gray
 $darker = $tundora
+$light-dark = $boulder
 $light = $white
 $lighter = $athens-gray
 
 $primary = $resolution-blue
 $primary-deep = $deep-koamaru
 $secondary = $malibu
+$secondary-gray = $ship-cove
 $secondary-deep = $indigo
 
 
 // text colors
 $text-color-base = $base
+$text-color-light-dark = $light-dark
 $text-color-darker = $darker
 $text-color-light = $light
 $text-color-lighter = $lighter
 $text-color-primary = $primary
 $text-color-primary-deep = $primary-deep
 $text-color-secondary = $secondary
+$text-color-secondary-gray = $secondary-gray
 $text-color-secondary-deep = $secondary-deep
 
 // background colors
 $bg-color-base = $base
+$bg-color-darker = $darker
+$bg-color-dark = $dark
 $bg-color-light = $light
 $bg-color-lighter = $lighter
 $bg-color-primary = $primary
@@ -118,20 +124,27 @@ $screen-mobile-375-max = 374px
 /**
  * Fonts
  */
-$font-size-black-desktop = 4.2rem
+$font-size-huge-desktop = 13.2rem
+$font-size-black-desktop = 9.6rem
 $font-size-large-desktop = 4.0rem
-$font-size-big-desktop = 2.0rem
-$font-size-medium-desktop = 1.8rem
-$font-size-small-desktop = 1.6rem
+$font-size-big-desktop = 2.8rem
+$font-size-medium-desktop = 2.4rem
+$font-size-xmedium-desktop = 2.2rem
+$font-size-small-desktop = 2.0rem
+$font-size-xsmall-desktop = 1.8rem
+$font-size-smaller-desktop = 1.6rem
+$font-size-xxsmall-desktop = 1.4rem
+
 
 /**
  * Line Height
  */
-$line-height-large = (40 / 20) // 2
-$line-height-regular = (28 / 16) // 1.75
-$line-height-default = 1.67 // 1.67
-$line-height-medium = (18 / 16) // 1.125
-$line-height-small = (40 / 40) // 1
+$line-height-regular = 2
+$line-height-default = 1.667
+$line-height-medium = 1.5
+$line-height-xmedium = 1.43
+$line-height-small = 1.25
+$line-height-xsmall = 1
 
 /**
  * Font weights
@@ -171,40 +184,26 @@ media-wide()
   @media screen and (max-width: $screen-wide-max)
     {block}
 
-// @stylint ignore
-
 media-tablet()
   @media screen and (max-width: $screen-tablet-max)
     {block}
-
-// @stylint ignore
 
 media-tablet-mobile()
   @media screen and (max-width: $screen-tablet-mobile-max)
     {block}
 
-// @stylint ignore
-
 media-mobile()
   @media screen and (max-width: $screen-mobile-max)
     {block}
-
-// @stylint ignore
 
 media-mobile-600()
   @media screen and (max-width: $screen-mobile-600-max)
     {block}
 
-// @stylint ignore
-
 media-mobile-480()
   @media screen and (max-width: $screen-mobile-480-max)
     {block}
 
-// @stylint ignore
-
 media-mobile-375()
   @media screen and (max-width: $screen-mobile-375-max)
     {block}
-
-// @stylint ignore

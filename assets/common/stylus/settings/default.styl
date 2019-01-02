@@ -9,45 +9,70 @@ body
   defaultFontFamily()
 
 h1, .h1
-  font-size $font-size-black-desktop // 4.2
-  line-height $line-height-default
+  font-size $font-size-black-desktop // 9.6
+  line-height $line-height-xsmall
+  &._huge
+    font-size $font-size-huge-desktop // 13.2
+    line-height $line-height-xsmall
 
 h2, .h2
-  font-size $font-size-black-desktop // 2.0
-  line-height $line-height-small
+  font-size $font-size-big-desktop // 2.8
+  line-height $line-height-xmedium
+  &._big
+    font-size $font-size-large-desktop // 4.0
+    line-height $line-height-xsmall
+    letter-spacing -0.02em
+    word-spacing 0.05em
 
 h3, .h3
-  font-size $font-size-large-desktop // 4.0
-  line-height $line-height-small
-  font-weight $font-weight-light-text
+  font-size $font-size-medium-desktop // 2.4
+  line-height $line-height-medium
+  &._slim
+    line-height $line-height-small
 
 h4, .h4
-  font-size $font-size-big-desktop // 2.0
-  line-height $line-height-large
+  font-size $font-size-small-desktop // 2.0
+  line-height $line-height-regular
+  letter-spacing -0.003em
+  &._big
+    font-size $font-size-xmedium-desktop // 2.2
+    line-height $line-height-default
+  &._slim
+    line-height $line-height-medium
+
+h5, .h5
+  font-size $font-size-xxsmall-desktop // 1.4
+  line-height $line-height-regular
+
 
 p
-  font-size $font-size-medium-desktop // 1.8
+  font-size $font-size-xsmall-desktop // 1.8
   line-height $line-height-default
-  &._small
-    font-size $font-size-small-desktop // 1.6
-    line-height $line-height-regular
+  &._big
+    font-size $font-size-small-desktop // 2.0
+    line-height $line-height-medium
+  &._xsmall
+    font-size $font-size-xxsmall-desktop // 1.4
+    line-height $line-height-xmedium
 
-li, th, td
-  font-size $font-size-medium-desktop // 1.8
 
-h1, h2, h3, h4, h5, h6, p, li, th, td
+h1, h2, h3, h4, h5, h6, p, li, th, td, span
   font-weight $font-weight-regular-text
   setFontColor()
   &._centered
     text-align center
   &._uppercase
     text-transform uppercase
-  &._semibold
-    font-weight $font-weight-semibold-text
   &._fwlight
     font-weight $font-weight-light
+  &._fwmedium
+    font-weight $font-weight-medium-text
+  &._fwsemibold
+    font-weight $font-weight-semibold-text
+  &._fwbold
+    font-weight $font-weight-bold-text
 b
-  font-weight $font-weight-medium-text
+  font-weight $font-weight-bold-text
 
 img[data-object-fit='contain']
   object-fit contain
@@ -87,12 +112,16 @@ a[href]
   &:not([class])
     color $default-link-color
     text-decoration underline
+    .desktop &
+      trc()
+      &:hover
+        color $text-color-secondary-gray
 
   &:empty:before
     content attr(href)
 
 ::selection
-  background $text-color-secondary // @stylint ignore
+  background $text-color-secondary
   text-shadow none
 
 textarea
@@ -106,6 +135,8 @@ textarea
   overflow hidden
   min-width $wrapper-min-width
   min-height 100%
+  &__content
+    flex-grow 1
 
 .container
   margin 0 auto

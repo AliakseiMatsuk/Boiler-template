@@ -1,0 +1,7 @@
+mixin l-phones(o = {})
+
+  +b.UL.l-phones
+    each phone in lPhones.phones
+      +e.item
+        +e.phone(href=`tel:${phone.phone.num}` rel='nofollow') #{phone.phone.text}
+        +e.P.location._light._fwlight._xsmall #{phone.location}

@@ -1,14 +1,21 @@
 mixin pr-product(o = {})
 
-  +b.pr-product(class=`${o.className || ''}`, href=`${o.href}`, target="_blank", rel="noopener")
+  +b.pr-product(class=`${o.className || ''}`,
+  href=`${o.href}`,
+  target='_blank',
+  rel='noopener')
     +e.ARTICLE.inner
       if o.layout
-        +e.layout(src=`${ROOT_FOLDER}/${IMAGES_FOLDER}/products/${o.layout}.jpg`, alt=`${o.title}`, data-object-fit="cover", data-object-position="center")
+        +e.layout(
+        src=`${ROOT_FOLDER}/${IMAGES_FOLDER}/products/${o.layout}.jpg`,
+        alt=`${o.title}`,
+        data-object-fit='cover',
+        data-object-position='center')
       +svg({
         name: `logo-${o.logo}`,
         title: o.title,
         className: 'pr-product__logo'
       })
       +e.content
-        +e.title #{o.title}
-        +e.description #{o.description}
+        +e.H3._light._slim._fwlight #{o.title}
+        +e.H4.description._light._slim._fwsemibold #{o.description}

@@ -1,0 +1,54 @@
+extends ../../common/pug/layout.pug
+
+block variables
+  - var PAGEINFO = {title: 'Learning management system with multiplayer for VR & AR', description: 'Learning management system with multiplayer for VR & AR'}
+
+block content
+  body.p-tripointlab
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: 'Learning management system with multiplayer for VR & AR',
+          overlay: 'projects/3'
+        })
+        +s-default({
+          className: '_lighter _narrow',
+          top: {
+            title: 'Result'
+          },
+          inner: {
+            data: '<p>The University got an ultimate product corresponding all the value from the initial vision. The resulting solution contains:</p>',
+            slot: {
+              name: 'l-ordered',
+              props: {
+                list: 'tripointlab'
+              }
+            }
+          }
+        })
+        +s-default({
+          className: '_lighter _narrow',
+          top: {
+            title: 'Outcome'
+          },
+          inner: {
+            data: '<p>The client got initial feedback from the students and has a lot of ideas to implement next. We’re happy to help on that mind-blowing project and looking forward for long-term co-operation.</p>'
+          }
+        })
+        +s-default({
+          className: '_narrow',
+          top: {
+            title: 'Example of system components'
+          },
+          inner: {
+            slot: {
+              name: 'l-examples',
+              props: {
+                examples: 'tripointlab'
+              }
+            }
+          }
+        })
+      +s-footer()
+    +scripts()

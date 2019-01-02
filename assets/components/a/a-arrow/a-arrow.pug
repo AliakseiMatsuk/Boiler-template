@@ -1,5 +1,6 @@
 mixin a-arrow(o = {})
 
-  +b.a-arrow(href=`${o.href}`)
-    span.a-arrow__text #{o.text}
+  +b.a-arrow(href=o.href || false)
+    if o.text
+      span.a-arrow__text #{o.text}
     span.a-arrow__arrow

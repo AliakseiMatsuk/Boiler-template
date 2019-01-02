@@ -1,0 +1,7 @@
+mixin b-example(o = {})
+
+  +b.FIGURE.b-example
+    +e.image-wrapper
+      +e.image(src=`${ROOT_FOLDER}/${IMAGES_FOLDER}/${o.image}.jpg` alt=`${o.description}`)
+    +e.FIGCAPTION.description
+      p._centered #{o.description}

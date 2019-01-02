@@ -110,13 +110,13 @@ mixin picture(o = {})
         - iSIZES += c(i) + it
 
     if iSR && iS
-      img(src=iPath, srcset=iSRCSET, sizes=iSIZES, alt=iAlt)&attributes(iAttr)
+      img(src=iPath srcset=iSRCSET sizes=iSIZES alt=iAlt)&attributes(iAttr)
     else if iSR
-      img(src=iPath, srcset=iSRCSET, alt=iAlt)&attributes(iAttr)
+      img(src=iPath srcset=iSRCSET alt=iAlt)&attributes(iAttr)
     else if iS
-      img(src=iPath, sizes=iSIZES, alt=iAlt)&attributes(iAttr)
+      img(src=iPath sizes=iSIZES alt=iAlt)&attributes(iAttr)
     else
-      img(src=iPath, alt=iAlt)&attributes(iAttr)
+      img(src=iPath alt=iAlt)&attributes(iAttr)
 
   if o.sources
     picture
@@ -137,19 +137,19 @@ mixin picture(o = {})
             - sSIZES += c(i) + it
 
         if sS && sM && sT
-          source(srcset=sSRCSET, sizes=sSIZES, media=sM, type=sT)
+          source(srcset=sSRCSET sizes=sSIZES media=sM type=sT)
         else if sS && sM
-          source(srcset=sSRCSET, sizes=sSIZES, media=sM)
+          source(srcset=sSRCSET sizes=sSIZES media=sM)
         else if sS && sT
-          source(srcset=sSRCSET, sizes=sSIZES, type=sT)
+          source(srcset=sSRCSET sizes=sSIZES type=sT)
         else if sM && sT
-          source(srcset=sSRCSET, media=sM, type=sT)
+          source(srcset=sSRCSET media=sM type=sT)
         else if sS
-          source(srcset=sSRCSET, sizes=sSIZES)
+          source(srcset=sSRCSET sizes=sSIZES)
         else if sM
-          source(srcset=sSRCSET, media=sM)
+          source(srcset=sSRCSET media=sM)
         else if sT
-          source(srcset=sSRCSET, type=sT)
+          source(srcset=sSRCSET type=sT)
       +image({
         img: o.img,
         attr: attributes

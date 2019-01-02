@@ -1,0 +1,24 @@
+{
+  "emails": [
+    {
+      "title": "Get in touch",
+      "email": "info@qaprosoft.com",
+      "subject": "info request"
+    },
+    {
+      "title": "Estimate my project",
+      "email": "presale@qaprosoft.com",
+      "subject": "estimate request"
+    },
+    {
+      "title": "Get products support",
+      "email": "support@qaprosoft.com",
+      "subject": "support request"
+    },
+    {
+      "title": "Join the team",
+      "email": "jobs@qaprosoft.com",
+      "subject": "jobs request"
+    }
+  ]
+}

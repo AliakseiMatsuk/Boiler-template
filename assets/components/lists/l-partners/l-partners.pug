@@ -1,6 +1,6 @@
 mixin l-partners(o = {})
 
-  +b.UL.l-partners(class=`${o.className || ''}`, role='list')
+  +b.UL.l-partners(class=`${o.className || ''}`)
     each partner in lPartners.partners
       +e.partner
         +b-partner(partner)

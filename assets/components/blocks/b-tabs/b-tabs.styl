@@ -1,0 +1,55 @@
+.b-tabs
+  &__inner
+    display flex
+  &__values,
+  &__titles
+    fw(50%)
+  &__values
+    display flex
+  &__value
+    display none
+    flex-grow 1
+    justify-content center
+    align-items center
+    overflow hidden
+    padding 30px
+    background-color $bg-color-secondary
+
+    &._active
+      display flex
+    &-inner
+      font-size 12rem
+      line-height 1
+
+      &._small
+        font-size 10rem
+      &._tiny
+        font-size 8.5rem
+  &__title
+    &:not(:last-child)
+      .b-tabs
+        &__title
+          &-btn
+            border-bottom 1px solid #d1d1d1 // @stylint ignore
+    &-btn
+      padding 10px 45px
+      min-height 64px
+      width 100%
+      background-color #fafafa // @stylint ignore
+      color $text-color-base
+      text-align left
+      font-size $font-size-smaller-desktop
+      font-family inherit
+      cursor pointer
+
+      trbgc()
+      ._ie &
+        height 64px
+      .desktop &
+        &:hover
+          background-color rgba(0, 0, 0, .17)
+      &._active
+        background-color $bg-color-dark
+        color $text-color-light
+        cursor default
+        pointer-events none

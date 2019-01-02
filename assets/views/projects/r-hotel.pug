@@ -1,0 +1,39 @@
+extends ../../common/pug/layout.pug
+
+block variables
+  - var PAGEINFO = {title: 'AI based chatbot for hotel management system', description: 'AI based chatbot for hotel management system'}
+
+block content
+  body.p-r-hotel
+    +b.wrapper
+      +s-header()
+      +e.content
+        +s-intro({
+          title: 'AI based chatbot for hotel management system',
+          overlay: 'projects/4'
+        })
+        +s-default({
+          top: {
+            title: 'Situation preview'
+          },
+          inner: {
+            data: '<p>Let\'s Rally is a digital advertising agency with social, creative, media and development teams. Let’s Rally was looking for a qualified team able to create chatbot for Hotel Management System powered by artificial intelligence (AI). End solution should understand users’ intent and provide on-demand information in a natural way. End goal of the client was increase in number of bookings with reduced cost.</p>' +
+            '<p>Qaprosoft was selected from the number of vendors after technical assessment of our chatbot development team.</p>'
+          }
+        })
+        +s-default({
+          top: {
+            title: 'Solution'
+          },
+          inner: {
+            data: '<p>The resulting solution named HotelOps is able to:</p>',
+            slot: {
+              name: 'l-ordered',
+              props: {
+                list: 'r-hotel'
+              }
+            }
+          }
+        })
+      +s-footer()
+    +scripts()

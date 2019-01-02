@@ -1,0 +1,10 @@
+mixin b-videos(o = {})
+
+  +b.b-videos
+    +e.inner
+      each video in bVideos[o.videos]
+        +e.item
+          +e.IFRAME.iframe(
+          src=`${video.src}?controls=0`,
+          allow='encrypted-media',
+          allowfullscreen)

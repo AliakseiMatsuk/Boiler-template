@@ -1,10 +1,11 @@
 mixin l-ordered(o = {})
 
-  +b.OL.l-ordered(role="list")
+  +b.OL.l-ordered
     each item in lOrdered[o.list]
       +e.item(data-index=`${item.index}`)
         if item.title
-          +e.title #{item.title}
+          +e.title
+            p #{item.title}
 
         if item.description
           +e.description #{item.description}

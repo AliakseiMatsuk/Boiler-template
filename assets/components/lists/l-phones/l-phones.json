@@ -1,0 +1,18 @@
+{
+  "phones": [
+    {
+      "phone": {
+        "text": "+1 415-347-6011",
+        "num": "+14153476011"
+      },
+      "location": "North America"
+    },
+    {
+      "phone": {
+        "text": "+36 20 776-11-77 ",
+        "num": "+36207761177"
+      },
+      "location": "Europe / Asia"
+    }
+  ]
+}

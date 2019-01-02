@@ -1,0 +1,43 @@
+{
+  "primary": [
+    {
+      "title": "USA / Headquarters",
+      "street": "300 Harding Blvd. Suite 114",
+      "city": "Roseville, CA 95678"
+    },
+    {
+      "title": "Belarus / Roxoft General Partner",
+      "street": "39a Mogilevskaya str. 410",
+      "city": "Minsk, 220000"
+    },
+    {
+      "title": "Ukraine / R&D Office",
+      "street": "15, Komarova str",
+      "city": "Chernivtsi, 58018"
+    }
+  ],
+  "secondary": [
+    {
+      "title": "Hungary / Sales Office",
+      "street": "7, Dregelyvar utca str, Suite #1/8",
+      "city": "Budapest, 1158"
+    },
+    {
+      "title": "Argentina / Engineering Center",
+      "street": "462, Avellaneda, Tandil",
+      "city": "Buenos Aires, 7000"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+

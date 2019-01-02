@@ -20,6 +20,7 @@ module.exports = [
 
     './gulp/tasks/create.component.js',
     './gulp/tasks/lint.stylus.js',
+    './gulp/tasks/lint.pug.js',
     './gulp/tasks/lint.scripts.js'
 ];
 
